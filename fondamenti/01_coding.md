@@ -1,3 +1,34 @@
+# Corso di Informatica Base
+
+---
+
+## Slide 1: Benvenuti all'Introduzione al Coding! 🎉
+
+### Benvenuti
+
+Sono entusiasta di accompagnarvi in questo viaggio nel mondo della programmazione.
+
+### Chi sono
+
+- **Nome dell'insegnante**: Mauro Bogliaccino
+- **Esperienza**: Oltre 40 anni di pratica
+- **Passione**: Rendere la programmazione accessibile a tutti
+
+### Cosa faremo oggi
+
+- Scoprire cos'è il coding
+- Esplorare i linguaggi di programmazione
+- Comprendere i concetti fondamentali
+- Guardare al futuro del vostro percorso tech
+
+### 💡 Obiettivo del corso
+
+**Fornirvi le basi per iniziare il vostro percorso nel mondo della programmazione**
+
+> *"Tutti dovrebbero imparare a programmare un computer, perché ti insegna a pensare"* - Steve Jobs
+
+---
+
 # Slide 2: Cos'è il Coding? 🤔
 
 ### Definizione
@@ -172,3 +203,54 @@ int main() {
 4. **Comunità e risorse**: supporto disponibile?
 
 **💡 Consiglio per principianti**: Inizia con **Python** o **JavaScript**!
+
+---
+
+# La logica di programmazione
+
+La **logica di programmazione** è l’insieme dei **principi, regole e metodi di ragionamento** che permettono di risolvere un problema in modo sistematico attraverso un programma informatico.
+In altre parole, è la **capacità di tradurre un problema reale in una sequenza logica di istruzioni** che un computer possa eseguire.
+
+---
+
+### 🧩 **Definizione**
+
+La logica di programmazione consiste nel:
+
+* **analizzare un problema**,
+* **identificare le informazioni e le operazioni necessarie**,
+* **stabilire un ordine logico** tra i passi da compiere,
+* e **rappresentare la soluzione** con strumenti formali (pseudocodice, diagrammi di flusso o codice).
+
+È la base del **pensiero algoritmico**, cioè la capacità di costruire un algoritmo chiaro, corretto e ottimale.
+
+---
+
+### 💡 **Concetti fondamentali**
+
+1. **Sequenza** – esecuzione ordinata delle istruzioni.
+2. **Selezione** – scelte condizionali (if/else, switch).
+3. **Iterazione** – ripetizione controllata di azioni (cicli for, while).
+4. **Astrazione** – scomposizione del problema in sotto-problemi o funzioni.
+5. **Strutture dati** – organizzazione delle informazioni da elaborare.
+
+Questi elementi sono indipendenti dal linguaggio di programmazione scelto: sono universali.
+
+---
+
+### 🚀 **Importanza nella scrittura del codice**
+
+Una buona logica di programmazione consente di:
+
+* ✨ **Scrivere codice chiaro, efficiente e privo di errori**.
+* 🧠 **Affrontare problemi complessi in modo strutturato**, riducendo il rischio di bug.
+* 🔁 **Riutilizzare e adattare le soluzioni** in contesti diversi.
+* ⚙️ **Collaborare meglio in team**, grazie a codice leggibile e prevedibile.
+* 💬 **Apprendere nuovi linguaggi** più facilmente: cambia la sintassi, ma non la logica.
+
+---
+
+### 📘 **In sintesi**
+
+> **La logica di programmazione è il pensiero razionale che sta dietro al codice.**
+> È ciò che distingue chi “scrive comandi” da chi “progetta soluzioni”.
