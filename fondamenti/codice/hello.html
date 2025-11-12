@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+    <style>
+        h1 {color:red}
+    </style>
+</head>
+<body>
+    
+    <h1 id="titolo">Hello world</h1>
+
+    <button onclick="aggiorna()">Refresh</button>
+
+    <table id="tabella">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Prezzo</th>
+        </tr>
+    </table>
+
+
+    <script>
+        console.log('funziona!!!!!!!!');
+        
+        document.getElementById('titolo').textContent = "Frutta";
+
+        function aggiorna() {
+            console.log("Abbiamo finito!!!");
+            
+        }
+
+    </script>
+
+
+
+</body>
+</html>
