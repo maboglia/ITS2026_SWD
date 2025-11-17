@@ -62,7 +62,7 @@
             if ($j == 1){
                 //echo $frutta[$i][$j];
                 //incremento la variabile totale leggendo il prezzo della frutta
-                //$totale += $frutta[$i][$j];
+                $totale += floatval($frutta[$i][$j]);
             }
 
             $output .= '</td>';
