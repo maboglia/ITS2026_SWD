@@ -1,18 +1,33 @@
+---
+marp: true
+theme: gaia
+paginate: true
+size: 16:9
+class: lead
+footer: "© 2025 | Mauro Bogliaccino"
+---
+
 # Corso di Informatica Base
 
 ---
 
 ## Slide 1: Benvenuti all'Introduzione al Coding! 🎉
 
+---
+
 ### Benvenuti
 
 Sono entusiasta di accompagnarvi in questo viaggio nel mondo della programmazione.
+
+---
 
 ### Chi sono
 
 - **Nome dell'insegnante**: Mauro Bogliaccino
 - **Esperienza**: Oltre 40 anni di pratica
 - **Passione**: Rendere la programmazione accessibile a tutti
+
+---
 
 ### Cosa faremo oggi
 
@@ -21,7 +36,11 @@ Sono entusiasta di accompagnarvi in questo viaggio nel mondo della programmazion
 - Comprendere i concetti fondamentali
 - Guardare al futuro del vostro percorso tech
 
+---
+
 ### 💡 Obiettivo del corso
+
+---
 
 **Fornirvi le basi per iniziare il vostro percorso nel mondo della programmazione**
 
@@ -31,7 +50,11 @@ Sono entusiasta di accompagnarvi in questo viaggio nel mondo della programmazion
 
 # Slide 2: Cos'è il Coding? 🤔
 
+---
+
 ### Definizione
+
+---
 
 **Coding** (o **programmazione**) è il processo di:
 
@@ -39,7 +62,11 @@ Sono entusiasta di accompagnarvi in questo viaggio nel mondo della programmazion
 - Creare software, applicazioni, siti web e molto altro
 - Risolvere problemi attraverso la logica computazionale
 
+---
+
 ### Perché è importante?
+
+---
 
 #### 🌐 Nel mondo moderno
 
@@ -47,17 +74,23 @@ Sono entusiasta di accompagnarvi in questo viaggio nel mondo della programmazion
 - **Automazione**: dal banking online allo shopping e-commerce
 - **Comunicazione**: social media, messaggistica, videochiamate
 
+---
+
 #### 💼 Nel settore tecnologico
 
 - **Richiesta crescente**: milioni di posti di lavoro tech disponibili
 - **Stipendi competitivi**: tra i settori meglio retribuiti
 - **Innovazione continua**: AI, blockchain, IoT, metaverso
 
+---
+
 ### Il coding in numeri
 
 - 📱 5+ miliardi di utenti internet nel mondo
 - 💰 Settore IT da oltre $5 trilioni globalmente
 - 🚀 Crescita prevista del 22% nei prossimi 10 anni
+
+---
 
 ### Applicazioni pratiche
 
@@ -70,13 +103,21 @@ Sono entusiasta di accompagnarvi in questo viaggio nel mondo della programmazion
 
 ## Slide 3: Linguaggi di Programmazione 🗣️
 
+---
+
 ### Cos'è un linguaggio di programmazione?
 
 Un **linguaggio formale** che permette di comunicare con il computer attraverso istruzioni specifiche.
 
+---
+
 ### I linguaggi più popolari
 
+---
+
 #### 🐍 Python
+
+---
 
 **Caratteristiche:**
 
@@ -84,12 +125,16 @@ Un **linguaggio formale** che permette di comunicare con il computer attraverso 
 - Versatile e potente
 - Grande comunità di supporto
 
+---
+
 **Utilizzi principali:**
 
 - Data Science e Machine Learning
 - Automazione e scripting
 - Sviluppo web (Django, Flask)
 - Analisi dati e visualizzazione
+
+---
 
 **Esempio:**
 
@@ -100,7 +145,11 @@ età = 25
 print(f"{nome} ha {età} anni")
 ```
 
+---
+
 #### 💛 JavaScript
+
+---
 
 **Caratteristiche:**
 
@@ -108,12 +157,16 @@ print(f"{nome} ha {età} anni")
 - Eseguito nel browser
 - Front-end e back-end (Node.js)
 
+---
+
 **Utilizzi principali:**
 
 - Sviluppo web interattivo
 - Applicazioni web dinamiche
 - App mobile (React Native)
 - Server-side (Node.js)
+
+---
 
 **Esempio:**
 
@@ -124,7 +177,11 @@ let età = 30;
 console.log(`${nome} ha ${età} anni`);
 ```
 
+---
+
 #### ☕ Java
+
+---
 
 **Caratteristiche:**
 
@@ -132,12 +189,16 @@ console.log(`${nome} ha ${età} anni`);
 - Orientato agli oggetti
 - Molto robusto e sicuro
 
+---
+
 **Utilizzi principali:**
 
 - Applicazioni enterprise
 - App Android
 - Sistemi bancari e finanziari
 - Server di grandi dimensioni
+
+---
 
 **Esempio:**
 
@@ -152,7 +213,11 @@ public class HelloWorld {
 }
 ```
 
+---
+
 #### ⚡ C++
+
+---
 
 **Caratteristiche:**
 
@@ -160,12 +225,16 @@ public class HelloWorld {
 - Controllo a basso livello
 - Molto potente ma complesso
 
+---
+
 **Utilizzi principali:**
 
 - Videogiochi (Unreal Engine)
 - Software di sistema
 - Applicazioni real-time
 - Grafica 3D e simulazioni
+
+---
 
 **Esempio:**
 
@@ -182,6 +251,8 @@ int main() {
 }
 ```
 
+---
+
 ### Altri linguaggi popolari
 
 | Linguaggio | Difficoltà | Utilizzo principale |
@@ -193,7 +264,11 @@ int main() {
 | **Go** | Media | Cloud computing, microservizi |
 | **Rust** | Difficile | Sicurezza, performance, sistemi |
 
+---
+
 ### Come scegliere?
+
+---
 
 **Considera:**
 
@@ -201,6 +276,8 @@ int main() {
 2. **Curva di apprendimento**: quanto è facile iniziare?
 3. **Opportunità lavorative**: domanda di mercato?
 4. **Comunità e risorse**: supporto disponibile?
+
+---
 
 **💡 Consiglio per principianti**: Inizia con **Python** o **JavaScript**!
 

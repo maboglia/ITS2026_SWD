@@ -1,5 +1,7 @@
 # Slide 6: Funzioni e Procedure 🔧
 
+---
+
 ### Cos'è una funzione?
 
 Una **funzione** è un blocco di codice riutilizzabile che:
@@ -11,7 +13,11 @@ Una **funzione** è un blocco di codice riutilizzabile che:
 
 **Analogia:** Come una ricetta in cucina - definisci una volta, usi molte volte!
 
+---
+
 ### Perché usare le funzioni?
+
+---
 
 #### ✅ Vantaggi
 
@@ -21,7 +27,11 @@ Una **funzione** è un blocco di codice riutilizzabile che:
 4. **Testing**: Facile testare componenti isolati
 5. **Collaborazione**: Team diversi lavorano su funzioni diverse
 
+---
+
 ### Sintassi Base
+
+---
 
 #### Python
 
@@ -34,6 +44,8 @@ def nome_funzione():
 # Chiamata della funzione
 nome_funzione()
 ```
+
+---
 
 #### JavaScript
 
@@ -48,7 +60,11 @@ function nomeFunzione() {
 nomeFunzione();
 ```
 
+---
+
 ### Funzioni con Parametri
+
+---
 
 #### Parametri singoli
 
@@ -62,6 +78,8 @@ saluta("Mario")    # Ciao Mario!
 saluta("Anna")     # Ciao Anna!
 saluta("Luigi")    # Ciao Luigi!
 ```
+
+---
 
 #### Parametri multipli
 
@@ -78,6 +96,8 @@ presenta_persona("Marco", 25, "Roma")
 # Vivo a Roma
 ```
 
+---
+
 #### Parametri con valori predefiniti
 
 ```python
@@ -89,7 +109,11 @@ saluta("Marco", "Buonasera")  # Buonasera, Marco!
 saluta("Luigi", messaggio="Ciao")  # Ciao, Luigi!
 ```
 
+---
+
 ### Funzioni con Return
+
+---
 
 #### Return singolo
 
@@ -105,6 +129,8 @@ print(totale)  # 8
 # Direttamente in un'espressione
 print(f"10 + 20 = {somma(10, 20)}")  # 10 + 20 = 30
 ```
+
+---
 
 #### Funzioni matematiche
 
@@ -127,6 +153,8 @@ area1 = calcola_area_rettangolo(5, 10)  # 50
 area2 = calcola_area_cerchio(7)  # ~153.94
 ipotenusa = calcola_ipotenusa(3, 4)  # 5.0
 ```
+
+---
 
 #### Return multipli
 
@@ -151,7 +179,11 @@ print(f"Massimo: {max_val}")   # 30
 print(f"Media: {media_val}")   # 21.0
 ```
 
+---
+
 ### Scope delle Variabili
+
+---
 
 #### Variabili locali vs globali
 
@@ -180,7 +212,11 @@ incrementa()
 print(contatore)  # 2
 ```
 
+---
+
 ### Esempi Pratici Completi
+
+---
 
 #### 1. Calcolatrice
 
@@ -209,6 +245,8 @@ print(calcolatrice(10, 5, "/"))   # 2.0
 print(calcolatrice(10, 0, "/"))   # Errore: divisione per zero
 ```
 
+---
+
 #### 2. Validatore email
 
 ```python
@@ -236,6 +274,8 @@ print(valida_email("anna.rossi@uni.it"))  # True
 print(valida_email("invalido@"))          # False
 print(valida_email("no-chiocciola.com"))  # False
 ```
+
+---
 
 #### 3. Convertitore temperatura
 
@@ -276,6 +316,8 @@ print(f"32°F = {converti_temperatura(32, 'F', 'C')}°C")    # 0.0
 print(f"0°C = {converti_temperatura(0, 'C', 'K')}K")       # 273.15
 ```
 
+---
+
 #### 4. Generatore di password
 
 ```python
@@ -301,7 +343,11 @@ print(genera_password(8, False, False))  # Es: AbCdEfGh
 print(genera_password(16, True, True))  # Es: 9x!K2@mP5#nR8$qT
 ```
 
+---
+
 ### Funzioni Lambda (Anonime)
+
+---
 
 #### Python
 
@@ -329,6 +375,8 @@ pari = list(filter(lambda x: x % 2 == 0, numeri))
 print(pari)  # [2, 4]
 ```
 
+---
+
 #### JavaScript
 
 ```javascript
@@ -344,6 +392,8 @@ const numeri = [1, 2, 3, 4, 5];
 const quadrati = numeri.map(x => x ** 2);
 const pari = numeri.filter(x => x % 2 === 0);
 ```
+
+---
 
 ### Documentazione delle Funzioni (Docstrings)
 
@@ -382,6 +432,8 @@ bmi, categoria = calcola_bmi(70, 1.75)
 print(f"BMI: {bmi} - {categoria}")
 ```
 
+---
+
 ### 💡 Best Practices
 
 - **Nome descrittivo**: `calcola_totale()` non `calc()`
@@ -394,11 +446,15 @@ print(f"BMI: {bmi} - {categoria}")
 
 # Slide 7: Strutture Dati 📊
 
+---
+
 ### Cos'è una struttura dati?
 
 Le **strutture dati** sono modi per organizzare, gestire e memorizzare dati in modo efficiente per accedervi e modificarli.
 
 **Analogia:** Come organizzare i libri in una biblioteca - scaffali, sezioni, cataloghi.
+
+---
 
 ### Perché sono importanti?
 
@@ -407,7 +463,11 @@ Le **strutture dati** sono modi per organizzare, gestire e memorizzare dati in m
 - 💾 **Efficienza**: Uso ottimale della memoria
 - 🔍 **Ricerca**: Trovare dati rapidamente
 
+---
+
 ### 1. Array/Liste (già viste)
+
+---
 
 #### Caratteristiche
 
@@ -435,7 +495,11 @@ numeri.reverse()       # Inverte
 # Inserimento inizio: O(n) - lenta
 ```
 
+---
+
 ### 2. Stack (Pila) 📚
+
+---
 
 #### Concetto: LIFO (Last In, First Out)
 
@@ -482,6 +546,8 @@ print(stack.pop())     # "secondo"
 print(stack.size())    # 1
 ```
 
+---
+
 #### Applicazioni pratiche
 
 - 🔙 **Undo/Redo** negli editor
@@ -510,7 +576,11 @@ print(controlla_parentesi("((a + b)"))            # False
 print(controlla_parentesi("(a + b])"))            # False
 ```
 
+---
+
 ### 3. Queue (Coda) 🚶‍♂️🚶‍♀️🚶
+
+---
 
 #### Concetto: FIFO (First In, First Out)
 
@@ -556,6 +626,8 @@ print(coda.dequeue())  # "Cliente 2"
 print(coda.size())     # 1
 ```
 
+---
+
 #### Applicazioni pratiche
 
 - 🖨️ **Code di stampa**
@@ -597,7 +669,11 @@ cassa1.servi_cliente()
 cassa1.servi_cliente()
 ```
 
+---
+
 ### 4. Dizionari/Hash Maps (già visti)
+
+---
 
 #### Caratteristiche
 
@@ -618,6 +694,8 @@ telefono = rubrica["Mario Rossi"]  # Accesso
 rubrica["Sara Neri"] = "328-1112233"  # Inserimento
 del rubrica["Luigi Verdi"]  # Rimozione
 ```
+
+---
 
 #### Applicazioni pratiche
 
@@ -650,7 +728,11 @@ print(risultato)
 # {'python': 3, 'è': 3, 'fantastico': 1, 'potente': 1, 'versatile': 1}
 ```
 
+---
+
 ### 5. Set (Insieme) 🔵
+
+---
 
 #### Caratteristiche
 
@@ -679,6 +761,8 @@ differenza = A - B       # {1, 2, 3}
 diff_simmetrica = A ^ B  # {1, 2, 3, 6, 7, 8}
 ```
 
+---
+
 #### Applicazioni pratiche
 
 ```python
@@ -704,7 +788,11 @@ solo_facebook = utenti_facebook - utenti_instagram
 print(f"Solo Facebook: {solo_facebook}")  # {'Mario', 'Sara'}
 ```
 
+---
+
 ### 6. Linked List (Lista Concatenata) 🔗
+
+---
 
 #### Concetto
 
@@ -778,6 +866,8 @@ lista.stampa_lista()  # 5 -> 10 -> 20 -> 30
 print(f"Posizione di 20: {lista.cerca(20)}")  # 2
 ```
 
+---
+
 ### Confronto Strutture Dati
 
 | Struttura | Accesso | Ricerca | Inserimento | Rimozione | Uso Principale |
@@ -788,6 +878,8 @@ print(f"Posizione di 20: {lista.cerca(20)}")  # 2
 | **Dizionario** | O(1) | O(1) | O(1) | O(1) | Lookup veloce |
 | **Set** | - | O(1) | O(1) | O(1) | Unicità, operazioni insieme |
 | **Linked List** | O(n) | O(n) | O(1) | O(1) | Inserimenti frequenti |
+
+---
 
 ### Scegliere la struttura giusta
 
@@ -817,6 +909,8 @@ cronologia_browser = Stack()
 # - Gestione ordini, task
 coda_stampa = Queue()
 ```
+
+---
 
 ### 💡 Best Practices
 

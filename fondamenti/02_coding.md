@@ -1,5 +1,16 @@
+---
+marp: true
+theme: gaia
+paginate: true
+size: 16:9
+class: lead
+footer: "© 2025 | Mauro Bogliaccino"
+---
 
-## 🧠 **Scheda Didattica – La Logica di Programmazione**
+
+# 🧠 **La Logica di Programmazione**
+
+---
 
 ### 📘 **Definizione**
 
@@ -32,7 +43,11 @@ La **logica di programmazione** è la capacità di **analizzare un problema** e 
 
 ### 🧮 **Esempio pratico**
 
+---
+
 **Problema:** Calcolare la media di 3 numeri.
+---
+
 **Algoritmo (in pseudocodice):**
 
 ```
@@ -43,6 +58,8 @@ somma = numero1 + numero2 + numero3
 media = somma / 3
 stampa media
 ```
+
+---
 
 **Logica:** sequenza → calcolo → output.
 Questo stesso algoritmo può essere tradotto in **qualsiasi linguaggio** (Java, Python, PHP...).
@@ -85,11 +102,17 @@ Questo stesso algoritmo può essere tradotto in **qualsiasi linguaggio** (Java, 
 
 # Slide 4: Variabili e Tipi di Dati 📦
 
+---
+
 ### Cosa sono le variabili?
 
 Le **variabili** sono **contenitori** che memorizzano informazioni che possono essere utilizzate e modificate nel programma.
 
+---
+
 **Analogia:** Come una scatola con un'etichetta che contiene qualcosa all'interno.
+
+---
 
 ### Dichiarazione di variabili
 
@@ -109,9 +132,15 @@ var altezza = 1.75;
 let è_studente = true;
 ```
 
+---
+
 ### Tipi di Dati Fondamentali
 
+---
+
 #### 1️⃣ Numeri (Numbers)
+
+---
 
 **Interi (int/integer):**
 
@@ -122,6 +151,8 @@ temperatura = -5
 punteggio = 0
 ```
 
+---
+
 **Decimali (float/double):**
 
 ```python
@@ -130,6 +161,8 @@ pi_greco = 3.14159
 temperatura = 36.6
 peso = 72.5
 ```
+
+---
 
 **Operazioni numeriche:**
 
@@ -142,7 +175,11 @@ potenza = 2 ** 3      # 8
 resto = 17 % 5        # 2
 ```
 
+---
+
 #### 2️⃣ Stringhe (String)
+
+---
 
 **Testo tra virgolette:**
 
@@ -152,6 +189,8 @@ cognome = 'Rossi'
 messaggio = "Benvenuto nel corso!"
 indirizzo = "Via Roma, 123"
 ```
+
+---
 
 **Operazioni con stringhe:**
 
@@ -174,7 +213,11 @@ print(testo.capitalize())  # "Python"
 prima_lettera = nome[0]  # "A"
 ```
 
+---
+
 #### 3️⃣ Booleani (Boolean)
+
+---
 
 **Vero o Falso:**
 
@@ -184,6 +227,8 @@ ha_patente = False
 è_studente = True
 corso_completato = False
 ```
+
+---
 
 **Operazioni logiche:**
 
@@ -198,7 +243,11 @@ ha_sconto = è_studente or età < 18
 non_è_maggiorenne = not è_maggiorenne
 ```
 
+---
+
 #### 4️⃣ Liste/Array
+
+---
 
 **Collezione ordinata di elementi:**
 
@@ -229,7 +278,11 @@ frutti.push("kiwi");  // Aggiunge alla fine
 frutti.pop();  // Rimuove l'ultimo
 ```
 
+---
+
 #### 5️⃣ Dizionari/Oggetti
+
+---
 
 **Coppie chiave-valore:**
 
@@ -267,6 +320,8 @@ const nome = studente.nome;  // "Mario"
 const età = studente["età"];  // 22
 ```
 
+---
+
 ### Conversione tra tipi (Type Casting)
 
 ```python
@@ -286,6 +341,8 @@ vero = bool(1)   # True
 falso = bool(0)  # False
 ```
 
+---
+
 ### 💡 Best Practices
 
 - **Nomi descrittivi**: `nome_studente` invece di `x`
@@ -296,13 +353,21 @@ falso = bool(0)  # False
 
 # Slide 5: Istruzioni di Controllo 🔀
 
+---
+
 ### Cos'è il flusso di controllo?
 
 Il **controllo del flusso** permette di determinare quali istruzioni eseguire e in che ordine, basandosi su condizioni specifiche.
 
+---
+
 **Analogia:** Come un semaforo che decide se puoi proseguire o devi fermarti.
 
+---
+
 ### 1. Istruzioni Condizionali: IF-ELSE
+
+---
 
 #### Sintassi base
 
@@ -312,6 +377,8 @@ if condizione:
     # codice da eseguire se vero
     print("La condizione è vera")
 ```
+
+---
 
 #### IF-ELSE completo
 
@@ -339,6 +406,8 @@ if (età >= 18) {
 }
 ```
 
+---
+
 #### IF-ELIF-ELSE (Condizioni multiple)
 
 ```python
@@ -360,6 +429,8 @@ else:
 print(f"Risultato: {risultato}")
 ```
 
+---
+
 #### Operatori di confronto
 
 ```python
@@ -373,6 +444,8 @@ print(f"Risultato: {risultato}")
 5 >= 5    # True (maggiore o uguale)
 4 <= 3    # False (minore o uguale)
 ```
+
+---
 
 #### Operatori logici
 
@@ -398,6 +471,8 @@ if not è_piovoso:
     print("Andiamo al parco!")
 ```
 
+---
+
 #### Condizioni annidate
 
 ```python
@@ -421,7 +496,11 @@ else:
     print("Minorenne ✗")
 ```
 
+---
+
 ### 2. Switch/Match (Selezione multipla)
+
+---
 
 #### Python 3.10+ (Match-Case)
 
@@ -445,6 +524,8 @@ match giorno:
         print("Giorno lavorativo standard")
         attività = "Lavoro"
 ```
+
+---
 
 #### JavaScript (Switch)
 
@@ -476,7 +557,11 @@ switch(giorno) {
 }
 ```
 
+---
+
 ### 3. Ciclo FOR (Iterazione definita)
+
+---
 
 #### Iterare su un range
 
@@ -501,6 +586,8 @@ for i in range(0, 10, 2):
     print(i)  # 0, 2, 4, 6, 8
 ```
 
+---
+
 #### Iterare su liste
 
 ```python
@@ -518,6 +605,8 @@ for i in range(len(frutti)):
 for indice, frutto in enumerate(frutti, start=1):
     print(f"{indice}. {frutto}")
 ```
+
+---
 
 #### JavaScript FOR loop
 
@@ -539,7 +628,11 @@ frutti.forEach((frutto, indice) => {
 });
 ```
 
+---
+
 ### 4. Ciclo WHILE (Iterazione indefinita)
+
+---
 
 #### Sintassi base
 
@@ -558,6 +651,8 @@ while contatore <= 5:
 # Contatore: 4
 # Contatore: 5
 ```
+
+---
 
 #### Esempio pratico: Menu interattivo
 
@@ -585,6 +680,8 @@ while scelta != "q":
         print("Opzione non valida!")
 ```
 
+---
+
 #### WHILE con condizioni complesse
 
 ```python
@@ -607,7 +704,11 @@ while tentativo < max_tentativi and not password_corretta:
             print("✗ Accesso negato. Troppi tentativi falliti.")
 ```
 
+---
+
 ### 5. Controllo del Ciclo: BREAK e CONTINUE
+
+---
 
 #### BREAK - Interrompe il ciclo
 
@@ -626,6 +727,8 @@ for numero in numeri:
 # Output si ferma quando trova 15
 ```
 
+---
+
 #### CONTINUE - Salta all'iterazione successiva
 
 ```python
@@ -637,6 +740,8 @@ for i in range(1, 11):
 
 # Output: 2, 4, 6, 8, 10
 ```
+
+---
 
 #### Esempio combinato
 
@@ -652,6 +757,8 @@ for numero in range(1, 21):
     
     print(f"{numero} è divisibile per 3 ma non per 6")
 ```
+
+---
 
 ### 💡 Best Practices
 
