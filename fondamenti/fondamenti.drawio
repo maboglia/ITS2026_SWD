@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.2" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.6" pages="5">
   <diagram name="Pagina-1" id="EEr_frYD-x64kqNbitUN">
     <mxGraphModel dx="2066" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -455,6 +455,38 @@
         </mxCell>
         <mxCell id="kkNatpBq0BRD3uP3lg1O-50" value="server" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
           <mxGeometry x="10" y="373" width="100" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4Jn4x9_F29HSsYKs-TLR" name="Pagina-5">
+    <mxGraphModel dx="1425" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OyCxDAdkREqvapm3UEq3-1" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.mysql_db_instance;fillColor=#2E73B8;gradientColor=none;" value="" vertex="1">
+          <mxGeometry height="100" width="100" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OyCxDAdkREqvapm3UEq3-2" parent="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" value="R-DBMS" vertex="1">
+          <mxGeometry height="40" width="100" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OyCxDAdkREqvapm3UEq3-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="DBA" vertex="1">
+          <mxGeometry height="190" width="110" x="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OyCxDAdkREqvapm3UEq3-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;fontSize=32;" value="root" vertex="1">
+          <mxGeometry height="60" width="90" x="290" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OyCxDAdkREqvapm3UEq3-5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="its2026" vertex="1">
+          <mxGeometry height="60" width="30" x="490" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OyCxDAdkREqvapm3UEq3-10" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="its2026" vertex="1">
+          <mxGeometry height="80" width="60" x="730" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OyCxDAdkREqvapm3UEq3-11" edge="1" parent="1" source="OyCxDAdkREqvapm3UEq3-10" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="OyCxDAdkREqvapm3UEq3-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="390" as="sourcePoint" />
+            <mxPoint x="380" y="340" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
