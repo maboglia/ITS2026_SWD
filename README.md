@@ -8,3 +8,5 @@ Repo del corso SWD 2026
   - DDL
   - DML
     - DQL
+  
+  - filter
