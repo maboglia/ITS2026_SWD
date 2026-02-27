@@ -22,3 +22,10 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+swd2026/.metadata/*
+swd2026/.metadata/.plugins/org.eclipse.core.resources/.history/15/20c242dec813001111ae8eed11c5160b
+
+*.settings
+*.project
+*.classpath
