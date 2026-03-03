@@ -32,4 +32,9 @@ studenti = [('Simone','Albanese'),
 
 
 with open('studenti.json', 'w', encoding='utf-8') as f:
-    json.dump(studenti, f, indent=4) 
+    json.dump(studenti, f, indent=4)
+
+print(f"INSERT INTO Studenti(nome,cognome) VALUES ")
+
+for studente in studenti:
+    print(f"('{studente[0]}','{studente[1]}'),")
