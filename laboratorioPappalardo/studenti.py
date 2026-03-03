@@ -1,4 +1,6 @@
-[('Simone','Albanese'),
+import json
+
+studenti = [('Simone','Albanese'),
 ('Mondir','Badaoui'),
 ('Alessia','Cantelli'),
 ('Matteo','Charrier'),
@@ -27,3 +29,7 @@
 ('Anqi','Xu'),
 ('Rui Min Marco','Zhu'),
 ('Benedetto','Brancato')]
+
+
+with open('studenti.json', 'w', encoding='utf-8') as f:
+    json.dump(studenti, f, indent=4) 
