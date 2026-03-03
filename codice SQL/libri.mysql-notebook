@@ -1,0 +1,407 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "Script",
+    "content": "CREATE user its2026 identified by 'its2026';\n\ncreate database its2026;\n\ngrant all on its2026.* to its2026;\n\nuse its2026;\n\ncreate table libri (\n\n    libro_id int primary key AUTO_INCREMENT,\n    titolo VARCHAR(100) not null,\n    prezzo decimal(6,2) not null default 0,\n    pagine int not null default 0,\n    editore_id int not null\n);\n\nINSERT INTO libri VALUES (1, 'io robot', 15.0, 156,1);\nINSERT INTO libri VALUES (2, 'tu robot', 16.0, 164,1);\nINSERT INTO libri VALUES (3, 'i promessi', 145.0, 25,1);\nINSERT INTO libri VALUES (4, 'la divina', 45.0, 899,1);\nINSERT INTO libri VALUES (5, 'come ti chiami', 23.0, 4,1);\nINSERT INTO libri VALUES (6, 'io gatto', 4.0, 25,1);\nINSERT INTO libri VALUES (7, 'io topo', 15.0, 35,1);\nINSERT INTO libri VALUES (8, 'il gatto e la volpe', 14.0, 32,1);\nINSERT INTO libri VALUES (9, 'le mele', 21.0, 210,1);\nINSERT INTO libri VALUES (10, 'le pere', 12.0, 23,1);\n\nselect * from libri;\n",
+    "options": {
+        "tabSize": 4,
+        "indentSize": 4,
+        "insertSpaces": true,
+        "defaultEOL": "LF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": null,
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 30,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "663bb275-e560-4998-b6df-1b43e893012c"
+                    ]
+                },
+                "currentHeight": 300,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 44
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 44,
+                            "length": 26
+                        },
+                        "contentStart": 46,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 70,
+                            "length": 36
+                        },
+                        "contentStart": 72,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 106,
+                            "length": 14
+                        },
+                        "contentStart": 108,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 120,
+                            "length": 212
+                        },
+                        "contentStart": 122,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 332,
+                            "length": 56
+                        },
+                        "contentStart": 334,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 388,
+                            "length": 55
+                        },
+                        "contentStart": 389,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 443,
+                            "length": 57
+                        },
+                        "contentStart": 444,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 500,
+                            "length": 56
+                        },
+                        "contentStart": 501,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 556,
+                            "length": 59
+                        },
+                        "contentStart": 557,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 615,
+                            "length": 53
+                        },
+                        "contentStart": 616,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 668,
+                            "length": 53
+                        },
+                        "contentStart": 669,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 721,
+                            "length": 65
+                        },
+                        "contentStart": 722,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 786,
+                            "length": 54
+                        },
+                        "contentStart": 787,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 840,
+                            "length": 54
+                        },
+                        "contentStart": 841,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 894,
+                            "length": 22
+                        },
+                        "contentStart": 896,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 916,
+                            "length": 1
+                        },
+                        "contentStart": 915,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "b4c0e859-6fea-4577-c06e-9bc308c5697b",
+                    "resultId": "663bb275-e560-4998-b6df-1b43e893012c",
+                    "rows": [
+                        {
+                            "0": 1,
+                            "1": "io robot",
+                            "2": "15.00",
+                            "3": 156,
+                            "4": 1
+                        },
+                        {
+                            "0": 2,
+                            "1": "tu robot",
+                            "2": "16.00",
+                            "3": 164,
+                            "4": 1
+                        },
+                        {
+                            "0": 3,
+                            "1": "i promessi",
+                            "2": "145.00",
+                            "3": 25,
+                            "4": 1
+                        },
+                        {
+                            "0": 4,
+                            "1": "la divina",
+                            "2": "45.00",
+                            "3": 899,
+                            "4": 1
+                        },
+                        {
+                            "0": 5,
+                            "1": "come ti chiami",
+                            "2": "23.00",
+                            "3": 4,
+                            "4": 1
+                        },
+                        {
+                            "0": 6,
+                            "1": "io gatto",
+                            "2": "4.00",
+                            "3": 25,
+                            "4": 1
+                        },
+                        {
+                            "0": 7,
+                            "1": "io topo",
+                            "2": "15.00",
+                            "3": 35,
+                            "4": 1
+                        },
+                        {
+                            "0": 8,
+                            "1": "il gatto e la volpe",
+                            "2": "14.00",
+                            "3": 32,
+                            "4": 1
+                        },
+                        {
+                            "0": 9,
+                            "1": "le mele",
+                            "2": "21.00",
+                            "3": 210,
+                            "4": 1
+                        },
+                        {
+                            "0": 10,
+                            "1": "le pere",
+                            "2": "12.00",
+                            "3": 23,
+                            "4": 1
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "libro_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "titolo",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "prezzo",
+                            "field": "2",
+                            "dataType": {
+                                "type": 10,
+                                "flags": [
+                                    "UNSIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 65,
+                                "numericScale": 30,
+                                "parameterFormatType": "TwoOrOneOrZero",
+                                "synonyms": [
+                                    "FIXED",
+                                    "NUMERIC",
+                                    "DEC"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false,
+                            "default": "0.00"
+                        },
+                        {
+                            "title": "pagine",
+                            "field": "3",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false,
+                            "default": "0"
+                        },
+                        {
+                            "title": "editore_id",
+                            "field": "4",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 10 records retrieved in 1.957ms"
+                    },
+                    "totalRowCount": 10,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 15,
+                    "sql": "\n\nselect * from libri;",
+                    "updatable": true,
+                    "fullTableName": "libri"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 1,
+                "end": 30,
+                "language": "mysql",
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 44
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 44,
+                            "length": 1
+                        },
+                        "contentStart": 43,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}
