@@ -1,0 +1,62 @@
+#--$0 Query con JOIN
+#Trova il nome del cliente e il nome del dipendente che ha gestito il loro ordine
+#
+#Mostra il nome del cliente e i dettagli della sua ultima fattura
+#
+#Lista di brani con il loro artista e album
+#
+#Mostra il nome dei clienti e i brani acquistati
+#
+#Elenca tutti gli album con il numero di tracce in ciascuno
+#
+#Trova il totale speso da ogni cliente
+#
+#Mostra gli impiegati e i loro supervisori
+#
+#Trova le tracce vendute con il nome del genere
+#
+#Elenca gli artisti che hanno più di un album
+#
+#Trova i clienti con più di una fattura
+#
+#--$0 Query con Subquery
+#Trova il brano più costoso venduto
+#
+#Trova i clienti che hanno speso più della media
+#
+#Trova il totale venduto per ogni genere
+#
+#Trova il nome degli artisti che hanno album
+#
+#Trova gli artisti senza album
+#
+#Trova i clienti che hanno fatto almeno una fattura sopra i 10€
+#
+#Trova la durata media delle tracce per album
+#
+#Trova gli impiegati che hanno dipendenti sotto di loro
+#
+#Trova il numero di fatture per ogni cliente e ordinalo per numero decrescente
+#
+#Trova gli artisti che hanno più di un album (con subquery invece di JOIN)
+#
+#--$0 Query con Filtraggio Avanzato
+#Trova le tracce con una durata superiore alla media
+#
+#Trova le fatture superiori a 20€
+#
+#Trova i clienti in Brasile
+#
+#Trova i 5 album con il maggior numero di tracce
+#
+#Trova le tracce con il prezzo più alto
+#
+#Trova gli artisti il cui nome inizia con 'A'
+#
+#Trova le tracce vendute più di 3 volte
+#
+#Trova i clienti con email che terminano in '.com'
+#
+#Trova i clienti che hanno fatto almeno 5 acquisti
+#
+#Trova gli artisti più popolari in base alle vendite
