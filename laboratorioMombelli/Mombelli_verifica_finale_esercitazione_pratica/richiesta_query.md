@@ -1,0 +1,143 @@
+-- STEP 5 — Query base (SELECT, WHERE, ORDER BY)
+-- Task
+-- Scrivere query per:
+-- 
+-- Elenco studenti ordinati per cognome
+-- Studenti nati dopo il 2007
+-- Materie con più di 3 ore settimanali
+-- Esami con voto >= 8
+-- Docenti che hanno email con dominio @scuola.it
+
+-- STEP 6 — Join fondamentali
+-- Task
+-- Scrivere query con JOIN per:
+-- 
+-- Elenco studenti con la loro classe attuale
+-- Elenco esami con nome studente + materia + voto
+-- Docenti e materie insegnate
+-- Studenti che hanno sostenuto un esame di Informatica
+-- Classi con numero studenti iscritti
+-- Join richiesti:
+-- 
+-- INNER JOIN
+-- LEFT JOIN (almeno una query)
+
+-- STEP 7 — Aggregazioni (GROUP BY, HAVING)
+-- Task
+-- Scrivere query per:
+-- 
+-- Media voti per studente
+-- Media voti per materia
+-- Numero esami per materia
+-- Numero studenti per classe
+-- Studenti con media > 7 (HAVING)
+-- Esempio:
+-- 
+-- SELECT id_studente, AVG(voto) AS media
+-- FROM esame
+-- GROUP BY id_studente
+-- HAVING AVG(voto) > 7;
+
+-- STEP 8 — Subquery e query avanzate
+-- Task
+-- Scrivere query con subquery per:
+-- 
+-- Studente con media più alta
+-- Materia con voto medio più basso
+-- Studenti che non hanno mai sostenuto esami
+-- Docenti che insegnano più di 1 materia
+-- Studenti che hanno almeno un 10
+
+-- STEP 9 — Operazioni DML avanzate (UPDATE, DELETE)
+-- Task
+-- Aumentare di +1 tutti i voti < 6 (max 6)
+-- Aggiornare email di un docente
+-- Cancellare esami più vecchi di una data (test)
+-- Cancellare uno studente e verificare cosa succede (vincoli FK)
+-- Scopo: testare ON DELETE CASCADE / RESTRICT.
+-- 
+
+-- STEP 10 — Vincoli e integrità referenziale
+-- Task
+-- Testare che il DB blocchi:
+-- 
+-- inserimento studente senza email
+-- inserimento email duplicata
+-- inserimento voto 11
+-- inserimento esame con id_materia inesistente
+-- Output richiesto:
+-- 
+-- screenshot o log degli errori DB
+
+-- STEP 11 — Viste SQL (VIEW)
+-- Task
+-- Creare almeno 3 viste:
+-- 
+-- Vista 1: elenco studenti con classe
+-- CREATE VIEW v_studenti_classi AS ...
+-- Vista 2: esami dettagliati
+-- (studente + materia + voto + data)
+-- 
+-- Vista 3: medie studenti
+-- (media voti per studente)
+-- 
+-- Poi usare le viste in query reali.
+-- 
+
+-- STEP 12 — Report finale con query complesse
+-- Task
+-- Scrivere query per produrre report tipo:
+-- 
+-- Top 5 studenti per media voti
+-- Studenti insufficienti (media < 6)
+-- Materie più difficili (media più bassa)
+-- Distribuzione voti (quanti 10, quanti 9, ecc.)
+-- Classe con rendimento migliore (media più alta)
+
+-- STEP 13 — Indici (INDEX) e performance base
+-- Task
+-- Creare indici su:
+-- 
+-- studente(email)
+-- esame(id_studente)
+-- esame(id_materia)
+-- iscrizione(id_classe)
+-- Poi usare:
+-- 
+-- EXPLAIN SELECT ...
+-- Obiettivo: capire concetto di indice.
+-- 
+
+-- STEP 14 — Transazioni (COMMIT, ROLLBACK)
+-- Task
+-- Simulare una situazione reale:
+-- 
+-- Scenario
+-- inserisci un esame
+-- aggiorni la media (se esiste tabella di appoggio)
+-- se qualcosa fallisce → rollback
+-- Esempio:
+-- 
+-- BEGIN;
+-- 
+-- INSERT INTO esame (...) VALUES (...);
+-- 
+-- UPDATE studente SET ... WHERE ...;
+-- 
+-- ROLLBACK;
+-- Poi ripetere con COMMIT.
+-- 
+-- Obiettivo: capire atomicità.
+-- 
+
+-- STEP 15 — Stored Procedure / Trigger (facoltativo)
+-- Trigger richiesto (facoltativo)
+-- Quando inserisci un esame:
+-- 
+-- controlla che la data non sia futura
+-- controlla voto valido
+-- (extra) aggiorna tabella media_studenti
+-- STEP 16 — Backup ed Export (facoltativo)
+-- Task
+-- esportare DB in SQL dump
+-- importarlo su un nuovo DB
