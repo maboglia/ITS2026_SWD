@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\maikol.mombelli\Desktop\Base di dati\ITS2026_SWD\laboratorioMombelli\Java\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+4260132103.index
+453637994.index
+2099413845.index
+2634263267.index

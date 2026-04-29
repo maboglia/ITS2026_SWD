@@ -1,0 +1,12 @@
+package todo;
+
+public class TodoList {
+
+	public static void main(String[] args) {
+
+		Todo t1 = new Todo("comprare pane");
+		
+		System.out.println(t1.stampa());
+	}
+
+}
