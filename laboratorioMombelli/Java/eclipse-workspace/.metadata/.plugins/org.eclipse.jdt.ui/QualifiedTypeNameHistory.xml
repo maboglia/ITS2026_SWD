@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="model.Book"/>
     <fullyQualifiedTypeName name="controller.Shelf"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="util.MyScanner"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="repos.ProductRepo"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="repos.ProductRepoImpl"/>
+    <fullyQualifiedTypeName name="services.ProductsService"/>
+    <fullyQualifiedTypeName name="services.ProductsServiceImpl"/>
+    <fullyQualifiedTypeName name="model.Product"/>
 </qualifiedTypeNameHistroy>
