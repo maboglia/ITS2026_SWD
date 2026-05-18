@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="model.Book"/>
     <fullyQualifiedTypeName name="controller.Shelf"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="util.MyScanner"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="repos.ProductRepo"/>
@@ -12,4 +11,17 @@
     <fullyQualifiedTypeName name="services.ProductsService"/>
     <fullyQualifiedTypeName name="services.ProductsServiceImpl"/>
     <fullyQualifiedTypeName name="model.Product"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="figure.Punto"/>
+    <fullyQualifiedTypeName name="figure.Segmento"/>
+    <fullyQualifiedTypeName name="figure.Triangolo"/>
+    <fullyQualifiedTypeName name="figure.Rettangolo"/>
+    <fullyQualifiedTypeName name="figure.Quadrato"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 </qualifiedTypeNameHistroy>
