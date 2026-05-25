@@ -4,9 +4,7 @@
     <fullyQualifiedTypeName name="model.Book"/>
     <fullyQualifiedTypeName name="controller.Shelf"/>
     <fullyQualifiedTypeName name="util.MyScanner"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="repos.ProductRepo"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="repos.ProductRepoImpl"/>
     <fullyQualifiedTypeName name="services.ProductsService"/>
     <fullyQualifiedTypeName name="services.ProductsServiceImpl"/>
@@ -27,4 +25,11 @@
     <fullyQualifiedTypeName name="model.Categorie"/>
     <fullyQualifiedTypeName name="model.Fornitore"/>
     <fullyQualifiedTypeName name="model.Prodotto"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="controller.AziendaController"/>
+    <fullyQualifiedTypeName name="model.Fattorino"/>
+    <fullyQualifiedTypeName name="model.Dipendente"/>
+    <fullyQualifiedTypeName name="model.Impiegato"/>
+    <fullyQualifiedTypeName name="model.Dirigente"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
