@@ -1,0 +1,18 @@
+{
+    "name": "maikol.mombelli/l07_autosalone-db",
+    "description": "Progetto autosalone con php",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "APP\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maikol Mombelli",
+            "email": "maikol.mombelli@example.com"
+        }
+    ],
+    "require": {}
+}
