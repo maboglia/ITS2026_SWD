@@ -17,5 +17,10 @@ public class ServizoVeicoli {
 	public List<Automobile> getAutomobili(){
 		return repoAuto.findAll();
 	}
+
+	public Automobile addAutomobile(Automobile automobile) {
+		// TODO Auto-generated method stub
+		return repoAuto.save(automobile);
+	}
 	
 }

@@ -27,6 +27,14 @@ public class Automobile {
 		this.prezzo = prezzo;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getMarca() {
 		return marca;
 	}
