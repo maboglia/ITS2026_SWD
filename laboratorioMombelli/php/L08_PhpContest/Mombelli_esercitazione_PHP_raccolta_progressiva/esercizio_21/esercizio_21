@@ -1,0 +1,12 @@
+<?php
+
+//Esercizio 21 – Data ultima modifica
+
+$file = "C:\\xampp\\htdocs\\SWD_TOP\\L05_Magazzino\\model\\Prodotto.php";
+if (file_exists($file)) {
+    echo "Il file esiste. Ultima modifica: " . date("d/m/Y H:i:s", filemtime($file));
+} else {
+    echo "Il file non esiste.";
+}
+
+
