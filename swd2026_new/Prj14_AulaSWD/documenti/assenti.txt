@@ -1,0 +1,6 @@
+--------------------------
+Appello del 2026-06-05T11:37:19.365152
+--------------------------
+Studente [id=1, nome=Simone, cognome=Albanese]
+Studente [id=18, nome=ismail, cognome=perta]
+Studente [id=28, nome=Rui Min Marco, cognome=Zhu]
