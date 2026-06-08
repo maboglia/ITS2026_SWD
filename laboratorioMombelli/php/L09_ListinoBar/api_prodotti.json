@@ -1,0 +1,836 @@
+[
+  {
+    "id": 1,
+    "prezzo": 1.2,
+    "prodotto": "Caffè Espresso/Americano",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 2,
+    "prezzo": 0.8,
+    "prodotto": "Correzione con Liquori",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 3,
+    "prezzo": 1.3,
+    "prodotto": "Caffè Decaffeinato",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 4,
+    "prezzo": 1.7,
+    "prodotto": "Caffè Ginseng espresso",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 5,
+    "prezzo": 1.9,
+    "prodotto": "Caffè Ginseng tazza grande",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 6,
+    "prezzo": 1.2,
+    "prodotto": "Caffè Macchiato (latte)",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 7,
+    "prezzo": 1.8,
+    "prodotto": "Caffè Marocchino (latte)",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 8,
+    "prezzo": 1.8,
+    "prodotto": "Cappuccino di soia",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 9,
+    "prezzo": 3.0,
+    "prodotto": "Cioccolata in tazza (latte)",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 10,
+    "prezzo": 1.2,
+    "prodotto": "Latte bianco",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 11,
+    "prezzo": 1.6,
+    "prodotto": "Latte macchiato/Caffè-latte",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 12,
+    "prezzo": 1.7,
+    "prodotto": "Orzo espresso (glutine)",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 13,
+    "prezzo": 1.9,
+    "prodotto": "Orzo in tazza grande (glutine)",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 14,
+    "prezzo": 1.8,
+    "prodotto": "Tè, camomilla, infusi in teiera",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 15,
+    "prezzo": 0.5,
+    "prodotto": "Acqua minerale bicchiere",
+    "sezione": "BIBITE"
+  },
+  {
+    "id": 16,
+    "prezzo": 2.5,
+    "prodotto": "Bibite alla spina piccole",
+    "sezione": "BIBITE"
+  },
+  {
+    "id": 17,
+    "prezzo": 4.0,
+    "prodotto": "Bibite alla spina medie",
+    "sezione": "BIBITE"
+  },
+  {
+    "id": 18,
+    "prezzo": 3.5,
+    "prodotto": "Spremuta di agrumi",
+    "sezione": "BIBITE"
+  },
+  {
+    "id": 19,
+    "prezzo": 2.8,
+    "prodotto": "Succhi di frutta 200 ml.",
+    "sezione": "BIBITE"
+  },
+  {
+    "id": 20,
+    "prezzo": 3.0,
+    "prodotto": "The freddo Bott. 0,5 L.",
+    "sezione": "BIBITE"
+  },
+  {
+    "id": 21,
+    "prezzo": 3.0,
+    "prodotto": "Birra Forst spina 20 cl.",
+    "sezione": "BIRRE (glutine)"
+  },
+  {
+    "id": 22,
+    "prezzo": 4.5,
+    "prodotto": "Birra Forst spina 40 cl.",
+    "sezione": "BIRRE (glutine)"
+  },
+  {
+    "id": 23,
+    "prezzo": 3.5,
+    "prodotto": "Beck's 33 cl./Moretti Radler 33 cl.",
+    "sezione": "BIRRE (glutine)"
+  },
+  {
+    "id": 24,
+    "prezzo": 3.5,
+    "prodotto": "Heineken 33 cl./Forst 33 cl. 1857",
+    "sezione": "BIRRE (glutine)"
+  },
+  {
+    "id": 25,
+    "prezzo": 4.0,
+    "prodotto": "Ichnusa non filtrata 33 cl.",
+    "sezione": "BIRRE (glutine)"
+  },
+  {
+    "id": 26,
+    "prezzo": 4.0,
+    "prodotto": "Peroni Senza Glutine 33 cl.",
+    "sezione": "BIRRE (glutine)"
+  },
+  {
+    "id": 27,
+    "prezzo": 3.5,
+    "prodotto": "Panini",
+    "sezione": "SNACKS"
+  },
+  {
+    "id": 28,
+    "prezzo": 2.0,
+    "prodotto": "Tramezzini",
+    "sezione": "SNACKS"
+  },
+  {
+    "id": 29,
+    "prezzo": 2.5,
+    "prodotto": "Pizzetta bianca",
+    "sezione": "SNACKS"
+  },
+  {
+    "id": 30,
+    "prezzo": 2.5,
+    "prodotto": "Pizzetta margherita",
+    "sezione": "SNACKS"
+  },
+  {
+    "id": 31,
+    "prezzo": 3.0,
+    "prodotto": "Pizzette farcite",
+    "sezione": "SNACKS"
+  },
+  {
+    "id": 32,
+    "prezzo": 1.8,
+    "prodotto": "Patatine",
+    "sezione": "SNACKS"
+  },
+  {
+    "id": 33,
+    "prezzo": 2.2,
+    "prodotto": "Muffin",
+    "sezione": "PASTICCERIA"
+  },
+  {
+    "id": 34,
+    "prezzo": 1.0,
+    "prodotto": "Pasticceria Mignon",
+    "sezione": "PASTICCERIA"
+  },
+  {
+    "id": 35,
+    "prezzo": 0.6,
+    "prodotto": "Biscotteria Mignon",
+    "sezione": "PASTICCERIA"
+  },
+  {
+    "id": 36,
+    "prezzo": 2.5,
+    "prodotto": "Crema al caffè",
+    "sezione": "GELATERIA E GRANITE"
+  },
+  {
+    "id": 37,
+    "prezzo": 3.5,
+    "prodotto": "Gelato sfuso grande",
+    "sezione": "GELATERIA E GRANITE"
+  },
+  {
+    "id": 38,
+    "prezzo": 2.5,
+    "prodotto": "Gelato sfuso piccolo",
+    "sezione": "GELATERIA E GRANITE"
+  },
+  {
+    "id": 39,
+    "prezzo": 2.5,
+    "prodotto": "Granite",
+    "sezione": "GELATERIA E GRANITE"
+  },
+  {
+    "id": 40,
+    "prezzo": 4.0,
+    "prodotto": "Calice prosecco/spumante",
+    "sezione": "VINI (solfiti)"
+  },
+  {
+    "id": 41,
+    "prezzo": 4.0,
+    "prodotto": "Calice vino bianco o rosso",
+    "sezione": "VINI (solfiti)"
+  },
+  {
+    "id": 42,
+    "prezzo": 3.0,
+    "prodotto": "Analcolici in bottiglietta",
+    "sezione": "APERITIVI"
+  },
+  {
+    "id": 43,
+    "prezzo": 3.5,
+    "prodotto": "Spritz (solfiti)",
+    "sezione": "APERITIVI"
+  },
+  {
+    "id": 44,
+    "prezzo": 3.0,
+    "prodotto": "Amari, Grappe, Sambuca",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 45,
+    "prezzo": 3.5,
+    "prodotto": "Amari speciali",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 46,
+    "prezzo": 3.5,
+    "prodotto": "Grappe barricate",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 47,
+    "prezzo": 4.0,
+    "prodotto": "Whisky, Cognac, Brandy",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 48,
+    "prezzo": 4.0,
+    "prodotto": "Vodka, Rum, Gin",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 49,
+    "prezzo": 3.5,
+    "prodotto": "Cocktail analcolici",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 50,
+    "prezzo": 5.0,
+    "prodotto": "Cocktail alcolici",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 51,
+    "prezzo": 1.0,
+    "prodotto": "Caffè",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 52,
+    "prezzo": 1.1,
+    "prodotto": "Caffè macchiato",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 53,
+    "prezzo": 1.1,
+    "prodotto": "Caffè decaffeinato",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 54,
+    "prezzo": 1.1,
+    "prodotto": "Caffè d’orzo",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 55,
+    "prezzo": 1.2,
+    "prodotto": "Caffè al ginseng",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 56,
+    "prezzo": 1.3,
+    "prodotto": "Cappuccino",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 57,
+    "prezzo": 1.3,
+    "prodotto": "Latte macchiato",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 58,
+    "prezzo": 1.8,
+    "prodotto": "Cioccolata calda",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 59,
+    "prezzo": 0.5,
+    "prodotto": "Acqua naturale 0,50 cl",
+    "sezione": "BEVANDE"
+  },
+  {
+    "id": 60,
+    "prezzo": 0.5,
+    "prodotto": "Acqua frizzante 0,50 cl",
+    "sezione": "BEVANDE"
+  },
+  {
+    "id": 61,
+    "prezzo": 1.5,
+    "prodotto": "Bibite lattina",
+    "sezione": "BEVANDE"
+  },
+  {
+    "id": 62,
+    "prezzo": 1.5,
+    "prodotto": "Succhi di frutta",
+    "sezione": "BEVANDE"
+  },
+  {
+    "id": 63,
+    "prezzo": 1.5,
+    "prodotto": "The freddo",
+    "sezione": "BEVANDE"
+  },
+  {
+    "id": 64,
+    "prezzo": 2.0,
+    "prodotto": "Birra analcolica 0,33 cl",
+    "sezione": "BIRRE"
+  },
+  {
+    "id": 65,
+    "prezzo": 2.5,
+    "prodotto": "Birra 0,33 cl",
+    "sezione": "BIRRE"
+  },
+  {
+    "id": 66,
+    "prezzo": 3.5,
+    "prodotto": "Birra 0,50 cl",
+    "sezione": "BIRRE"
+  },
+  {
+    "id": 67,
+    "prezzo": 2.0,
+    "prodotto": "Calice di vino",
+    "sezione": "VINI"
+  },
+  {
+    "id": 68,
+    "prezzo": 6.0,
+    "prodotto": "Bottiglia di vino",
+    "sezione": "VINI"
+  },
+  {
+    "id": 69,
+    "prezzo": 2.5,
+    "prodotto": "Aperitivi analcolici",
+    "sezione": "APERITIVI"
+  },
+  {
+    "id": 70,
+    "prezzo": 3.0,
+    "prodotto": "Aperitivi alcolici",
+    "sezione": "APERITIVI"
+  },
+  {
+    "id": 71,
+    "prezzo": 3.0,
+    "prodotto": "Spritz",
+    "sezione": "APERITIVI"
+  },
+  {
+    "id": 72,
+    "prezzo": 3.0,
+    "prodotto": "Amari, Grappe, Sambuca",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 73,
+    "prezzo": 3.5,
+    "prodotto": "Amari speciali",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 74,
+    "prezzo": 3.5,
+    "prodotto": "Grappe barricate",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 75,
+    "prezzo": 4.0,
+    "prodotto": "Whisky, Cognac, Brandy",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 76,
+    "prezzo": 4.0,
+    "prodotto": "Vodka, Rum, Gin",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 77,
+    "prezzo": 3.5,
+    "prodotto": "Cocktail analcolici",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 78,
+    "prezzo": 5.0,
+    "prodotto": "Cocktail alcolici",
+    "sezione": "SUPER ALCOLICI"
+  },
+  {
+    "id": 79,
+    "prezzo": 8.0,
+    "prodotto": "Pizza",
+    "sezione": "SNACKS"
+  },
+  {
+    "id": 80,
+    "prezzo": 6.5,
+    "prodotto": "Insalata Caesar",
+    "sezione": "INSALATE"
+  },
+  {
+    "id": 81,
+    "prezzo": 7.5,
+    "prodotto": "Insalata Greca",
+    "sezione": "INSALATE"
+  },
+  {
+    "id": 82,
+    "prezzo": 4.5,
+    "prodotto": "Macedonia di Frutta",
+    "sezione": "DESSERT"
+  },
+  {
+    "id": 83,
+    "prezzo": 5.0,
+    "prodotto": "Cheesecake ai Frutti Rossi",
+    "sezione": "DESSERT"
+  },
+  {
+    "id": 84,
+    "prezzo": 4.8,
+    "prodotto": "Tiramisù della Casa",
+    "sezione": "DESSERT"
+  },
+  {
+    "id": 85,
+    "prezzo": 3.0,
+    "prodotto": "Frullato Fragola e Banana",
+    "sezione": "BEVANDE FRESCHE"
+  },
+  {
+    "id": 86,
+    "prezzo": 3.5,
+    "prodotto": "Smoothie Mango e Ananas",
+    "sezione": "BEVANDE FRESCHE"
+  },
+  {
+    "id": 87,
+    "prezzo": 2.8,
+    "prodotto": "Limonata Artigianale",
+    "sezione": "BEVANDE FRESCHE"
+  },
+  {
+    "id": 88,
+    "prezzo": 8.5,
+    "prodotto": "Hamburger Classico",
+    "sezione": "PANINI GOURMET"
+  },
+  {
+    "id": 89,
+    "prezzo": 9.5,
+    "prodotto": "Cheeseburger Bacon",
+    "sezione": "PANINI GOURMET"
+  },
+  {
+    "id": 90,
+    "prezzo": 8.0,
+    "prodotto": "Burger Vegetariano",
+    "sezione": "PANINI GOURMET"
+  },
+  {
+    "id": 91,
+    "prezzo": 5.5,
+    "prodotto": "Wrap Pollo e Verdure",
+    "sezione": "WRAP"
+  },
+  {
+    "id": 92,
+    "prezzo": 5.0,
+    "prodotto": "Wrap Tonno e Mais",
+    "sezione": "WRAP"
+  },
+  {
+    "id": 93,
+    "prezzo": 6.0,
+    "prodotto": "Wrap Salmone e Avocado",
+    "sezione": "WRAP"
+  },
+  {
+    "id": 94,
+    "prezzo": 3.5,
+    "prodotto": "Patatine Rustiche",
+    "sezione": "CONTORNI"
+  },
+  {
+    "id": 95,
+    "prezzo": 4.0,
+    "prodotto": "Verdure Grigliate",
+    "sezione": "CONTORNI"
+  },
+  {
+    "id": 96,
+    "prezzo": 3.8,
+    "prodotto": "Anelli di Cipolla",
+    "sezione": "CONTORNI"
+  },
+  {
+    "id": 97,
+    "prezzo": 2.0,
+    "prodotto": "Espresso Doppio",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 98,
+    "prezzo": 2.5,
+    "prodotto": "Flat White",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 99,
+    "prezzo": 3.0,
+    "prodotto": "Chai Latte",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 100,
+    "prezzo": 3.5,
+    "prodotto": "Matcha Latte",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 101,
+    "prezzo": 10.0,
+    "prodotto": "Tagliata di Pollo",
+    "sezione": "PIATTI UNICI"
+  },
+  {
+    "id": 102,
+    "prezzo": 12.0,
+    "prodotto": "Bowl Salmone e Riso",
+    "sezione": "PIATTI UNICI"
+  },
+  {
+    "id": 103,
+    "prezzo": 11.0,
+    "prodotto": "Bowl Vegetariana",
+    "sezione": "PIATTI UNICI"
+  },
+  {
+    "id": 104,
+    "prezzo": 4.5,
+    "prodotto": "Calice Chardonnay",
+    "sezione": "VINI"
+  },
+  {
+    "id": 105,
+    "prezzo": 4.5,
+    "prodotto": "Calice Merlot",
+    "sezione": "VINI"
+  },
+  {
+    "id": 106,
+    "prezzo": 6.0,
+    "prodotto": "Mojito",
+    "sezione": "COCKTAIL"
+  },
+  {
+    "id": 107,
+    "prezzo": 7.0,
+    "prodotto": "Moscow Mule",
+    "sezione": "COCKTAIL"
+  },
+  {
+    "id": 108,
+    "prezzo": 5.5,
+    "prodotto": "Virgin Mojito",
+    "sezione": "COCKTAIL ANALCOLICI"
+  },
+  {
+    "id": 109,
+    "prezzo": 5.5,
+    "prodotto": "Shirley Temple",
+    "sezione": "COCKTAIL ANALCOLICI"
+  },
+  {
+    "id": 110,
+    "prezzo": 6.5,
+    "prodotto": "Insalata Caesar",
+    "sezione": "INSALATE"
+  },
+  {
+    "id": 111,
+    "prezzo": 7.5,
+    "prodotto": "Insalata Greca",
+    "sezione": "INSALATE"
+  },
+  {
+    "id": 112,
+    "prezzo": 4.5,
+    "prodotto": "Macedonia di Frutta",
+    "sezione": "DESSERT"
+  },
+  {
+    "id": 113,
+    "prezzo": 5.0,
+    "prodotto": "Cheesecake ai Frutti Rossi",
+    "sezione": "DESSERT"
+  },
+  {
+    "id": 114,
+    "prezzo": 4.8,
+    "prodotto": "Tiramisù della Casa",
+    "sezione": "DESSERT"
+  },
+  {
+    "id": 115,
+    "prezzo": 3.0,
+    "prodotto": "Frullato Fragola e Banana",
+    "sezione": "BEVANDE FRESCHE"
+  },
+  {
+    "id": 116,
+    "prezzo": 3.5,
+    "prodotto": "Smoothie Mango e Ananas",
+    "sezione": "BEVANDE FRESCHE"
+  },
+  {
+    "id": 117,
+    "prezzo": 2.8,
+    "prodotto": "Limonata Artigianale",
+    "sezione": "BEVANDE FRESCHE"
+  },
+  {
+    "id": 118,
+    "prezzo": 8.5,
+    "prodotto": "Hamburger Classico",
+    "sezione": "PANINI GOURMET"
+  },
+  {
+    "id": 119,
+    "prezzo": 9.5,
+    "prodotto": "Cheeseburger Bacon",
+    "sezione": "PANINI GOURMET"
+  },
+  {
+    "id": 120,
+    "prezzo": 8.0,
+    "prodotto": "Burger Vegetariano",
+    "sezione": "PANINI GOURMET"
+  },
+  {
+    "id": 121,
+    "prezzo": 5.5,
+    "prodotto": "Wrap Pollo e Verdure",
+    "sezione": "WRAP"
+  },
+  {
+    "id": 122,
+    "prezzo": 5.0,
+    "prodotto": "Wrap Tonno e Mais",
+    "sezione": "WRAP"
+  },
+  {
+    "id": 123,
+    "prezzo": 6.0,
+    "prodotto": "Wrap Salmone e Avocado",
+    "sezione": "WRAP"
+  },
+  {
+    "id": 124,
+    "prezzo": 3.5,
+    "prodotto": "Patatine Rustiche",
+    "sezione": "CONTORNI"
+  },
+  {
+    "id": 125,
+    "prezzo": 4.0,
+    "prodotto": "Verdure Grigliate",
+    "sezione": "CONTORNI"
+  },
+  {
+    "id": 126,
+    "prezzo": 3.8,
+    "prodotto": "Anelli di Cipolla",
+    "sezione": "CONTORNI"
+  },
+  {
+    "id": 127,
+    "prezzo": 2.0,
+    "prodotto": "Espresso Doppio",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 128,
+    "prezzo": 2.5,
+    "prodotto": "Flat White",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 129,
+    "prezzo": 3.0,
+    "prodotto": "Chai Latte",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 130,
+    "prezzo": 3.5,
+    "prodotto": "Matcha Latte",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 131,
+    "prezzo": 10.0,
+    "prodotto": "Tagliata di Pollo",
+    "sezione": "PIATTI UNICI"
+  },
+  {
+    "id": 132,
+    "prezzo": 12.0,
+    "prodotto": "Bowl Salmone e Riso",
+    "sezione": "PIATTI UNICI"
+  },
+  {
+    "id": 133,
+    "prezzo": 11.0,
+    "prodotto": "Bowl Vegetariana",
+    "sezione": "PIATTI UNICI"
+  },
+  {
+    "id": 134,
+    "prezzo": 4.5,
+    "prodotto": "Calice Chardonnay",
+    "sezione": "VINI"
+  },
+  {
+    "id": 135,
+    "prezzo": 4.5,
+    "prodotto": "Calice Merlot",
+    "sezione": "VINI"
+  },
+  {
+    "id": 136,
+    "prezzo": 6.0,
+    "prodotto": "Mojito",
+    "sezione": "COCKTAIL"
+  },
+  {
+    "id": 137,
+    "prezzo": 7.0,
+    "prodotto": "Moscow Mule",
+    "sezione": "COCKTAIL"
+  },
+  {
+    "id": 138,
+    "prezzo": 5.5,
+    "prodotto": "Virgin Mojito",
+    "sezione": "COCKTAIL ANALCOLICI"
+  },
+  {
+    "id": 139,
+    "prezzo": 5.5,
+    "prodotto": "Shirley Temple",
+    "sezione": "COCKTAIL ANALCOLICI"
+  }
+]
