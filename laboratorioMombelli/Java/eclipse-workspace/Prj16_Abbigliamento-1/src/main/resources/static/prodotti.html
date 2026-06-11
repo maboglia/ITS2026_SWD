@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Prodotti</h1>
+
+        <form action="/prodotti" method="post">
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="text" name="categoria" placeholder="Categoria">
+            <input type="number" name="prezzo" placeholder="Prezzo">
+            <input type="number" name="giacenza" placeholder="Giacenza">
+            <button type="submit">Aggiungi Prodotto</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrizione</th>
+                    <th>Prezzo</th>
+                    <th>Quantità</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<script>
+
+    const URL = "/api/prodotti";
+
+    fetch(URL)
+        .then(response => response.json())
+        .then(data => {
+            const tbody = document.querySelector("tbody");
+            data.forEach(prodotto => {
+                const tr = document.createElement("tr");
+                const td1 = document.createElement("td");
+                const td2 = document.createElement("td");
+                const td3 = document.createElement("td");
+                const td4 = document.createElement("td");
+
+                td1.textContent = prodotto.nome;
+                td2.textContent = prodotto.categoria;
+                td3.textContent = prodotto.prezzo;
+                td4.textContent = prodotto.giacenza;
+
+                tr.append(td1,td2,td3,td4);
+                tbody.appendChild(tr);
+            });
+        })
+
+</script>
+
+</body>
+</html>
