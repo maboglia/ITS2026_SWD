@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">Document</title>
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 th:text="${title}">Prodotti</h1>
+
+        <form action="/prodotti" method="post">
+            <label for="prodotto">Prodotto</label>
+            <input type="text" name="prodotto" id="prodotto">
+
+            <label for="prezzo">Prezzo</label>
+            <input type="number" name="prezzo" id="prezzo" step="0.01">
+
+            <label for="sezione">Sezione</label>
+            <select name="sezione" id="sezione">
+                <option value="">Tutte</option>
+                <option th:each="s : ${sezioni}" th:value="${s}" th:text="${s}">Sezione</option>
+            </select>
+
+            <button type="submit">Aggiungi Prodotto</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Prodotto</th>
+                    <th>Prezzo</th>
+                    <th>Sezione</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="p : ${prodotti}">
+                    <td th:text="${p.prodotto}">Nome prodotto</td>
+                    <td th:text="${p.prezzo}">Prezzo</td>
+                    <td th:text="${p.sezione}">Sezione</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+</body>
+</html>

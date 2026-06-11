@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1001,
+    "kcal": 250,
+    "prezzo": 6.5,
+    "prodotto": "Insalata Caesar",
+    "sezione": "INSALATE"
+  },
+  {
+    "id": 1002,
+    "kcal": 320,
+    "prezzo": 7.5,
+    "prodotto": "Insalata Greca",
+    "sezione": "INSALATE"
+  },
+  {
+    "id": 1003,
+    "kcal": 180,
+    "prezzo": 4.5,
+    "prodotto": "Macedonia di Frutta",
+    "sezione": "DESSERT"
+  },
+  {
+    "id": 1004,
+    "kcal": 420,
+    "prezzo": 5.0,
+    "prodotto": "Cheesecake ai Frutti Rossi",
+    "sezione": "DESSERT"
+  },
+  {
+    "id": 1005,
+    "kcal": 380,
+    "prezzo": 4.8,
+    "prodotto": "Tiramisù della Casa",
+    "sezione": "DESSERT"
+  },
+  {
+    "id": 1006,
+    "kcal": 150,
+    "prezzo": 3.0,
+    "prodotto": "Frullato Fragola e Banana",
+    "sezione": "BEVANDE FRESCHE"
+  },
+  {
+    "id": 1007,
+    "kcal": 120,
+    "prezzo": 3.5,
+    "prodotto": "Smoothie Mango e Ananas",
+    "sezione": "BEVANDE FRESCHE"
+  },
+  {
+    "id": 1008,
+    "kcal": 90,
+    "prezzo": 2.8,
+    "prodotto": "Limonata Artigianale",
+    "sezione": "BEVANDE FRESCHE"
+  },
+  {
+    "id": 1009,
+    "kcal": 550,
+    "prezzo": 8.5,
+    "prodotto": "Hamburger Classico",
+    "sezione": "PANINI GOURMET"
+  },
+  {
+    "id": 1010,
+    "kcal": 620,
+    "prezzo": 9.5,
+    "prodotto": "Cheeseburger Bacon",
+    "sezione": "PANINI GOURMET"
+  },
+  {
+    "id": 1011,
+    "kcal": 480,
+    "prezzo": 8.0,
+    "prodotto": "Burger Vegetariano",
+    "sezione": "PANINI GOURMET"
+  },
+  {
+    "id": 1012,
+    "kcal": 300,
+    "prezzo": 5.5,
+    "prodotto": "Wrap Pollo e Verdure",
+    "sezione": "WRAP"
+  },
+  {
+    "id": 1013,
+    "kcal": 280,
+    "prezzo": 5.0,
+    "prodotto": "Wrap Tonno e Mais",
+    "sezione": "WRAP"
+  },
+  {
+    "id": 1014,
+    "kcal": 350,
+    "prezzo": 6.0,
+    "prodotto": "Wrap Salmone e Avocado",
+    "sezione": "WRAP"
+  },
+  {
+    "id": 1015,
+    "kcal": 200,
+    "prezzo": 3.5,
+    "prodotto": "Patatine Rustiche",
+    "sezione": "CONTORNI"
+  },
+  {
+    "id": 1016,
+    "kcal": 180,
+    "prezzo": 4.0,
+    "prodotto": "Verdure Grigliate",
+    "sezione": "CONTORNI"
+  },
+  {
+    "id": 1017,
+    "kcal": 220,
+    "prezzo": 3.8,
+    "prodotto": "Anelli di Cipolla",
+    "sezione": "CONTORNI"
+  },
+  {
+    "id": 1018,
+    "kcal": 75,
+    "prezzo": 2.0,
+    "prodotto": "Espresso Doppio",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 1019,
+    "kcal": 110,
+    "prezzo": 2.5,
+    "prodotto": "Flat White",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 1020,
+    "kcal": 140,
+    "prezzo": 3.0,
+    "prodotto": "Chai Latte",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 1021,
+    "kcal": 130,
+    "prezzo": 3.5,
+    "prodotto": "Matcha Latte",
+    "sezione": "CAFFETTERIA"
+  },
+  {
+    "id": 1022,
+    "kcal": 500,
+    "prezzo": 10.0,
+    "prodotto": "Tagliata di Pollo",
+    "sezione": "PIATTI UNICI"
+  },
+  {
+    "id": 1023,
+    "kcal": 650,
+    "prezzo": 12.0,
+    "prodotto": "Bowl Salmone e Riso",
+    "sezione": "PIATTI UNICI"
+  },
+  {
+    "id": 1024,
+    "kcal": 580,
+    "prezzo": 11.0,
+    "prodotto": "Bowl Vegetariana",
+    "sezione": "PIATTI UNICI"
+  },
+  {
+    "id": 1025,
+    "kcal": 95,
+    "prezzo": 4.5,
+    "prodotto": "Calice Chardonnay",
+    "sezione": "VINI"
+  },
+  {
+    "id": 1026,
+    "kcal": 100,
+    "prezzo": 4.5,
+    "prodotto": "Calice Merlot",
+    "sezione": "VINI"
+  },
+  {
+    "id": 1027,
+    "kcal": 180,
+    "prezzo": 6.0,
+    "prodotto": "Mojito",
+    "sezione": "COCKTAIL"
+  },
+  {
+    "id": 1028,
+    "kcal": 210,
+    "prezzo": 7.0,
+    "prodotto": "Moscow Mule",
+    "sezione": "COCKTAIL"
+  },
+  {
+    "id": 1029,
+    "kcal": 160,
+    "prezzo": 5.5,
+    "prodotto": "Virgin Mojito",
+    "sezione": "COCKTAIL ANALCOLICI"
+  },
+  {
+    "id": 1030,
+    "kcal": 170,
+    "prezzo": 5.5,
+    "prodotto": "Shirley Temple",
+    "sezione": "COCKTAIL ANALCOLICI"
+  }
+]
