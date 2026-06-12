@@ -7,11 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.maboglia.model.Maglia;
+import com.maboglia.model.Prodotto;
+import com.maboglia.repos.ProdottoRepo;
 
 @Service
 public class TShirtServiceImpl implements TShirtService {
 
-	
+	@Autowired
+	private ProdottoRepo repo;
 	
 	@Override
 	public List<Maglia> getMagliette() {
@@ -43,6 +46,42 @@ public class TShirtServiceImpl implements TShirtService {
 	public Maglia addMaglietta(Maglia maglietta) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public List<Prodotto> getProdotti() {
+		// TODO Auto-generated method stub
+		return repo.findAll();
+	}
+
+	@Override
+	public Prodotto addProdotto(Prodotto p) {
+		// TODO Auto-generated method stub
+		return repo.save(p);
+	}
+
+	@Override
+	public Prodotto updateProdotto(Prodotto p) {
+		// TODO Auto-generated method stub
+		return repo.save(p);
+	}
+
+	@Override
+	public Prodotto getProdottoById(int id) {
+		// TODO Auto-generated method stub
+		return repo.findById(id).orElse(null);
+	}
+
+	@Override
+	public void deleteProdottoById(int id) {
+		// TODO Auto-generated method stub
+		repo.deleteById(id);
+	}
+
+	@Override
+	public List<Prodotto> getProdottiByCategory(String categoria) {
+		// TODO Auto-generated method stub
+		return repo.findByCategoria(categoria);
 	}
 
 }
