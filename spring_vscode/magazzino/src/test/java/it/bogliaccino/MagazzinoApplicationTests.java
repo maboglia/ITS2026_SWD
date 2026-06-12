@@ -1,10 +1,10 @@
-package com.maboglia;
+package it.bogliaccino;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Prj16AbbigliamentoApplicationTests {
+class MagazzinoApplicationTests {
 
 	@Test
 	void contextLoads() {

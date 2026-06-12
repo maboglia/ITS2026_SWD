@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MagazzinoApplication<it.bogliaccino-magazzino>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "it.bogliaccino.MagazzinoApplication",
+            "projectName": "it.bogliaccino-magazzino",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

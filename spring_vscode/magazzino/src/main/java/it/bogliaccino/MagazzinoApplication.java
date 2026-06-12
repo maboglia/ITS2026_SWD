@@ -1,13 +1,13 @@
-package com.maboglia;
+package it.bogliaccino;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Prj16AbbigliamentoApplication {
+public class MagazzinoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Prj16AbbigliamentoApplication.class, args);
+		SpringApplication.run(MagazzinoApplication.class, args);
 	}
 
 }

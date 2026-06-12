@@ -1,0 +1,15 @@
+2026-06-12 10:55:17.892435+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODOTTI" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.categoria,p1_0.giacenza,p1_0.nome,p1_0.prezzo from prodotti p1_0 [42104-240]
+2026-06-12 11:42:06.486325+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODOTTI" already exists; SQL statement:
+CREATE TABLE prodotti ( id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(100), categoria VARCHAR(50), prezzo DECIMAL(10, 2), giacenza INT ) [42101-240]
+2026-06-12 11:46:22.571654+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODOTTI" already exists; SQL statement:
+CREATE TABLE prodotti ( id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(100), categoria VARCHAR(50), prezzo DECIMAL(10, 2), giacenza INT ) [42101-240]
+2026-06-12 11:50:23.119118+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODOTTI" already exists; SQL statement:
+CREATE TABLE prodotti ( id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(100), categoria VARCHAR(50), prezzo DECIMAL(10, 2), giacenza INT ) [42101-240]
+2026-06-12 11:52:07.138378+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODOTTI" already exists; SQL statement:
+CREATE TABLE prodotti ( id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(100), categoria VARCHAR(50), prezzo DECIMAL(10, 2), giacenza INT ) [42101-240]
