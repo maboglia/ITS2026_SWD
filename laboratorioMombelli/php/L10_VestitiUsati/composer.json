@@ -1,0 +1,17 @@
+{
+    "name": "maikol.mombelli/l10_vestiti-usati",
+    "description": "Negozio di vestiti usati",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maikol Mombelli TOP"
+        }
+    ],
+    "require": {}
+}
