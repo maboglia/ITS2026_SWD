@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Document head start: metadata, title, and linked resources -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Magazzino">
+    <meta name="author" content="Maikol">
+    <title>Magazzino</title>
+
+    <!-- Open Graph metadata used by social platforms when the page is shared -->
+    <!--
+    <meta property="og:title" content="Title">
+    <meta property="og:type" content="Type">
+    <meta property="og:url" content="URL">
+    <meta property="og:description" content="Description of the content">
+    <meta property="og:image" content="Image">
+    -->
+    <!--
+    <link rel="icon" href="favicon.ico">
+    -->
+    <!-- Favicon displayed in the browser tab -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <!-- Link to external CSS stylesheet for page styling -->
+
+    <!-- Defer loading of main JavaScript until after HTML parsing -->
+    <!-- End of the head section -->
+</head>
+<body>
+<div class="container">
+    <h1>Prodotti</h1>
+    <form method="post">
+        <input type="text" id="nome" name="nome" class="input" placeholder="Nome">
+        <input type="text" id="categoria" name="categoria" class="input" placeholder="Categoria">
+        <input type="text" id="prezzo" name="prezzo" class="input" placeholder="Prezzo">
+        <input type="text" id="giacenza" name="giacenza" class="input" placeholder="Giacenza">
+        <input type="submit" id="button" name="Aggiungi prodotto">
+    </form>
+    <select name="categorie" id="categorie">
+        <option value="">-- Seleziona una Categoria --</option>
+    </select>
+
+
+    <table>
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Prezzo</th>
+            <th scope="col">Giacenza</th>
+        </tr>
+        </thead>
+        <tbody id="result">
+        </tbody>
+
+</div>
+<script defer src="./script/main.js"></script>
+</body>
+
+</html>

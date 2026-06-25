@@ -1,0 +1,6 @@
+2026-06-12 11:01:40.271515+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODOTTI" already exists; SQL statement:
+CREATE TABLE prodotti ( id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(100), categoria VARCHAR(50), prezzo DECIMAL(10, 2), giacenza INT ) [42101-240]
+2026-06-12 11:01:44.820543+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODOTTI" already exists; SQL statement:
+CREATE TABLE prodotti ( id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(100), categoria VARCHAR(50), prezzo DECIMAL(10, 2), giacenza INT ) [42101-240]
