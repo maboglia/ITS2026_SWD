@@ -27,8 +27,8 @@ INDEX VERSION 1.134+C:\Users\maikol.mombelli\Desktop\Bogliaccino\ITS2026_SWD\lab
 3951430141.index
 2832316759.index
 2545101261.index
-481644972.index
 3799307425.index
+481644972.index
 4094717123.index
 540484660.index
 4132260620.index
@@ -58,13 +58,12 @@ INDEX VERSION 1.134+C:\Users\maikol.mombelli\Desktop\Bogliaccino\ITS2026_SWD\lab
 2657639820.index
 1904305781.index
 2174517568.index
-3732710451.index
 2975263300.index
 2146071725.index
 380581932.index
 3446147585.index
-3607986091.index
 3967934178.index
+3607986091.index
 3626962548.index
 3113923610.index
 2517803925.index
@@ -114,6 +113,7 @@ INDEX VERSION 1.134+C:\Users\maikol.mombelli\Desktop\Bogliaccino\ITS2026_SWD\lab
 4235055233.index
 2141182716.index
 3793211650.index
+2311908732.index
 1277991066.index
 1607820827.index
 2097302949.index
@@ -201,8 +201,8 @@ INDEX VERSION 1.134+C:\Users\maikol.mombelli\Desktop\Bogliaccino\ITS2026_SWD\lab
 235589287.index
 1224139682.index
 2140390867.index
-3364814299.index
 3807122876.index
+3364814299.index
 3199428539.index
 157453650.index
 3299338545.index
