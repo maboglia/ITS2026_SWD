@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -14,6 +15,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import connessione.ProdottiDAO;
+
 public class Demo extends JFrame{
 
 	private	JTextArea textArea;
@@ -22,11 +25,12 @@ public class Demo extends JFrame{
 	private JLabel title;
 	private	JButton button;
 	private BorderLayout border;
+	private ProdottiDAO dao = new ProdottiDAO();
 	
 	public Demo(String title) {
 		this.title = new JLabel(title);
 		this.textArea = new JTextArea();
-		this.button = new JButton("Cliccami se vuoi");
+		this.button = new JButton("Add prodotto");
 		this.border = new BorderLayout();
 		this.categoria = new JTextField();
 		this.giacenza= new JTextField();
@@ -42,10 +46,25 @@ public class Demo extends JFrame{
 	}
 	
 	public void init() {
-		
-		button.addActionListener( e -> textArea.setText(
-				textArea.getText() + "Hello window\n"
-				) );
+		button.addActionListener( e -> {
+			
+			try {
+			dao.addProdotto(
+					nome.getText(), 
+					categoria.getText(), 
+					giacenza.getText(), 
+					prezzo.getText());
+			nome.setText("");
+			categoria.setText("");
+			giacenza.setText("");
+			prezzo.setText("");
+		} catch (SQLException e1) {
+			System.err.println( e1.getMessage());
+		}
+			
+		}
+
+				);
 		
 		title.setBackground(Color.GRAY);
 		title.setFont(new Font("Arial Bold", Font.ITALIC, 36));
