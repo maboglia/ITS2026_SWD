@@ -9,6 +9,16 @@
             "projectName": "it.bogliaccino-magazzino",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RelazioniPericoloseApplication<relazioni-pericolose>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.boglia.relazioni_pericolose.RelazioniPericoloseApplication",
+            "projectName": "relazioni-pericolose",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
