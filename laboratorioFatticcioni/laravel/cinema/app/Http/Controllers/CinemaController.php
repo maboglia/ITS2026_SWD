@@ -37,7 +37,7 @@ class CinemaController extends Controller
      */
     public function show(Cinema $cinema)
     {
-        //
+        return view('cinema.show', compact('cinema'));
     }
 
     /**

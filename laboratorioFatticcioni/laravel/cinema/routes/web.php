@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
-Route::resource('films', FilmController::class);
+Route::resource('film', FilmController::class);
 Route::resource('cinema', CinemaController::class);
 Route::resource('film_in_sala', FilmInSalaController::class);
 Route::resource('prenotazioni', PrenotazioniController::class);

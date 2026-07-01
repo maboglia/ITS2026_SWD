@@ -3,10 +3,25 @@
 
 <h1>Prenotazioni</h1>
 
-<ul>
-    @foreach ($prenotazionis as $prenotazione)
-        <li>{{ $prenotazione->filmInSala->film->titolo }} - {{ $prenotazione->filmInSala->cinema->nome_cinema }} - {{ $prenotazione->posti_prenotati }}</li>
-    @endforeach
-</ul>
+<table>
+    <thead>
+        <tr>
+            <th>Film</th>
+            <th>Cinema</th>
+            <th>Posti Prenotati</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($prenotazionis as $prenotazione)
+            <tr>
+                <td>{{ $prenotazione->filmInSala->film->titolo }}</td>
+                <td>{{ $prenotazione->filmInSala->cinema->nome_cinema }}</td>
+                <td>{{ $prenotazione->posti_prenotati }}</td>
+                <td>{{ $prenotazione->nome }}</td>
+            </tr>
+        @endforeach
+    </tbody>
+</table>
 
 @endsection

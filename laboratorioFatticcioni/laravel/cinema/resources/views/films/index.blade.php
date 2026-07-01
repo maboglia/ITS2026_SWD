@@ -5,7 +5,7 @@
 
 <ul>
     @foreach ($films as $film)
-        <li>{{ $film->titolo }}</li>
+        <li><a href="{{ route('film.show', $film) }}">{{ $film->titolo }}</a></li>
     @endforeach
 </ul>
 

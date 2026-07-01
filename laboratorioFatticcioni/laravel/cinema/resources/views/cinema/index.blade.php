@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Index Cinema</h1>
+    <h1>Sale Cinematografiche</h1>
     <ul>
         @foreach ($cinemas as $cinema)
-            <li>{{ $cinema->nome_cinema }}</li>
+            <li><a href="{{ route('cinema.show', $cinema->id) }}">{{ $cinema->nome_cinema }}</a></li>
         @endforeach
     </ul>
 @endsection
