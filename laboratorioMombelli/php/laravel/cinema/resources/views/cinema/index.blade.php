@@ -1,0 +1,9 @@
+@extends('layouts.app')
+@section('content')
+<h1>Lista dei Cinema</h1>
+    <ul>
+        @foreach ($cinemas as $cinema)
+            <li>{{ $cinema->nome_cinema }}</li>
+        @endforeach
+    </ul>
+@endsection
