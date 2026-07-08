@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import services.NegozioService;
 import services.NegozioServiceImpl;
 
-@WebServlet("/negozio")
+@WebServlet({"/negozio", "/store"})
 public class NegozioMVC extends HttpServlet {
 
 	
@@ -23,6 +23,11 @@ public class NegozioMVC extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		req.setAttribute("prodotti", this.service.getProdotti());
+		req.getRequestDispatcher("prodotti.jsp").forward(req, resp);
+		
+		System.out.println("Chiamata al metodo GET");
 		System.out.println(this.service.getProdotti());
 	}
 	
