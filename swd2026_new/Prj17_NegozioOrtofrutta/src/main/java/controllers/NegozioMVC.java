@@ -24,7 +24,23 @@ public class NegozioMVC extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		req.setAttribute("prodotti", this.service.getProdotti());
+		req.setAttribute("titolo", "Tutti i prodotti");
+		
+		if (req.getParameter("categoria")!= null) {
+
+			req.setAttribute("titolo", "Prodotti di categoria: " + 
+					req.getParameter("categoria"));
+
+			req.setAttribute("prodotti", this.service.getProdotti()
+					.stream()
+					.filter(p -> p.categoria().equals(req.getParameter("categoria")))
+					.toList()
+					);
+			
+		} else {
+			req.setAttribute("prodotti", this.service.getProdotti());
+		}
+		
 		req.getRequestDispatcher("prodotti.jsp").forward(req, resp);
 		
 		System.out.println("Chiamata al metodo GET");

@@ -2,7 +2,7 @@
 <%@page import="entities.Prodotto"%>
 
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -14,7 +14,7 @@
 <body>
 	<div class="container">
 	
-		<h1>Prodotti</h1>
+		<h1><%= request.getAttribute("titolo") %></h1>
 
 		<table>
 		<thead>
@@ -28,7 +28,7 @@
 				<% for (Prodotto p : (List<Prodotto>) request.getAttribute("prodotti")){ %>
 				<tr>
 					<td><%=p.nome()%></td>
-					<td><%=p.categoria()%></td>
+					<td><a href="?categoria=<%=p.categoria()%>"><%=p.categoria()%></a></td>
 					<td><%=p.prezzoKg()%></td>
 				</tr>
 				<%
@@ -36,8 +36,6 @@
 				%>
 			</tbody>
 		</table>
-
-
 
 	</div>
 
