@@ -2,6 +2,8 @@ package model;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Bicicletta {
 
@@ -42,6 +44,9 @@ public class Bicicletta {
 		for (Field field : fields) {
 			System.out.println(field.getName());
 		}
+		
+		List<Bicicletta> biciclette  = new ArrayList<>(); 
+		
 		
 	}
 }

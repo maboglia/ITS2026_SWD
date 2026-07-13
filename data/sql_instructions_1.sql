@@ -1,0 +1,1 @@
+create database esercitazione_pokemon;
