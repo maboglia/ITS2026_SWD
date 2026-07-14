@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettagli Film e Prenotazione</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+      .main-card {
+        width: 100%;
+        margin: 2rem auto;
+        padding: 3rem;
+      }
+      .booking-section {
+        border-top: 1px solid var(--pico-muted-border-color);
+        padding-top: 1.5rem;
+        margin-top: 1rem;
+      }
+      .booking-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1.5fr;
+        gap: 1rem;
+        align-items: end;
+      }
+      .booking-grid input, .booking-grid select, .booking-grid button {
+        margin-bottom: 0;
+      }
+      @media (max-width: 768px) {
+        .booking-grid {
+          grid-template-columns: 1fr;
+        }
+        .main-card {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <article class="main-card">
+        <header style="margin-bottom: 2rem;">
+          <a href="index.html" role="button" class="outline" style="margin-bottom: 1.5rem;">← Torna ai Film</a>
+          <h1 id="titolo-film" style="margin-bottom: 0.5rem;">Caricamento dettagli film...</h1>
+          <p id="info-regista-genere" style="font-size: 1.1rem; margin-bottom: 0;"></p>
+        </header>
+
+        <section>
+          <h2>Sale e Orari Disponibili</h2>
+          <div id="programmazione-container">
+            <p aria-busy="true">Ricerca programmazione nelle sale...</p>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const idFilm = urlParams.get('id');
+      
+      const programmazioneContainer = document.getElementById("programmazione-container");
+      const titoloFilmElement = document.getElementById("titolo-film");
+      const infoElement = document.getElementById("info-regista-genere");
+
+      function getDettagliFilm() {
+        if (!idFilm) {
+          titoloFilmElement.textContent = "Errore: Nessun film selezionato.";
+          programmazioneContainer.innerHTML = "";
+          return;
+        }
+
+        fetch(`http://localhost:8080/api/filminsala/${idFilm}`)
+          .then((response) => {
+            if (!response.ok) throw new Error("Impossibile recuperare i dati del film");
+            return response.json();
+          })
+          .then((data) => {
+            programmazioneContainer.innerHTML = "";
+
+            if (!data || data.length === 0) {
+              titoloFilmElement.textContent = "Film non disponibile";
+              programmazioneContainer.innerHTML = "<p>Ci dispiace, questo film non è in programmazione.</p>";
+              return;
+            }
+
+            const infoFilm = data[0];
+            titoloFilmElement.textContent = infoFilm.titolo;
+            infoElement.innerHTML = `<strong>Regista:</strong> ${infoFilm.regista} | <strong>Genere:</strong> <mark>${infoFilm.genere}</mark>`;
+
+            let htmlIniezione = "";
+
+            data.forEach((sala) => {
+              const dataFormattata = new Date(sala.data).toLocaleString('it-IT', {
+                day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'
+              });
+
+              const maxPostiSelezionabili = Math.min(sala.postiRimanenti, 10);
+              let optionPosti = "";
+              for(let i = 1; i <= maxPostiSelezionabili; i++) {
+                optionPosti += `<option value="${i}">${i} ${i === 1 ? 'posto' : 'posti'}</option>`;
+              }
+
+              htmlIniezione += `
+                <article style="border: 1px solid var(--pico-card-border-color); margin-bottom: 2rem;">
+                  <header style="padding: 1rem 1.5rem;">
+                    <h3 style="margin: 0; font-size: 1.4rem;">${sala.nomeCinema}</h3>
+                    <small style="font-size: 0.9rem;">📍 ${sala.indirizzo} - 📞 ${sala.telefono}</small>
+                  </header>
+                  
+                  <div class="grid" style="margin-bottom: 1.5rem; padding: 0 0.5rem;">
+                    <div>
+                      <p style="margin-bottom: 0.5rem;">🗓️ <strong>Data e Ora:</strong> ${dataFormattata}</p>
+                      <p style="margin-bottom: 0;">💰 <strong>Prezzo Biglietto:</strong> €${sala.prezzo.toFixed(2)}</p>
+                    </div>
+                    <div>
+                      <p style="margin-bottom: 0.5rem;">🪑 <strong>Posti Totali della Sala:</strong> ${sala.posti}</p>
+                      <p style="margin-bottom: 0;">🟢 <strong>Posti Rimasti Disponibili:</strong> <b style="color: var(--pico-primary);">${sala.postiRimanenti}</b></p>
+                    </div>
+                  </div>
+
+                  <div class="booking-section">
+                    ${sala.postiRimanenti > 0 ? `
+                      <form onsubmit="effettuaPrenotazione(event, ${sala.filmInSalaId})">
+                        <fieldset class="booking-grid">
+                          <div>
+                            <label for="nome-${sala.filmInSalaId}">Nome Prenotazione</label>
+                            <input type="text" id="nome-${sala.filmInSalaId}" placeholder="Inserisci il tuo nome" required>
+                          </div>
+                          <div>
+                            <label for="posti-${sala.filmInSalaId}">Numero Posti</label>
+                            <select id="posti-${sala.filmInSalaId}" required>
+                              ${optionPosti}
+                            </select>
+                          </div>
+                          <button type="submit" class="primary">Conferma e Prenota</button>
+                        </fieldset>
+                      </form>
+                    ` : `
+                      <p style="color: var(--pico-form-element-invalid-border-color); font-weight: bold; margin: 0; text-align: center; font-size: 1.1rem;">
+                        ❌ Tutto Esaurito per questa sessione.
+                      </p>
+                    `}
+                  </div>
+                </article>
+              `;
+            });
+
+            programmazioneContainer.innerHTML = htmlIniezione;
+          })
+          .catch((error) => {
+            console.error(error);
+            titoloFilmElement.textContent = "Errore di caricamento";
+          });
+      }
+
+      function effettuaPrenotazione(event, filmInSalaId) {
+        event.preventDefault();
+
+        const nomeInput = document.getElementById(`nome-${filmInSalaId}`).value;
+        const postiSelezionati = parseInt(document.getElementById(`posti-${filmInSalaId}`).value);
+
+        const prenotazionePayload = {
+          filmInsalaId: filmInSalaId,
+          postiPrenotati: postiSelezionati,
+          nome: nomeInput
+        };
+
+        fetch("http://localhost:8080/api/prenotazioni", {
+          method: "POST", 
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(prenotazionePayload)
+        })
+        .then(async (response) => {
+          if (!response.ok) {
+            throw new Error("Errore durante la prenotazione. Posti esauriti o problema al server.");
+          }
+          return response.text();
+        })
+        .then((msg) => {
+          alert("🎉 " + msg);
+          // Modifica qui: reindirizzamento immediato alla index dopo il click su OK dell'alert
+          window.location.href = "index.html"; 
+        })
+        .catch((error) => {
+          console.error(error);
+          alert("⚠️ Errore: " + error.message);
+        });
+      }
+
+      getDettagliFilm();
+    </script>
+  </body>
+</html>

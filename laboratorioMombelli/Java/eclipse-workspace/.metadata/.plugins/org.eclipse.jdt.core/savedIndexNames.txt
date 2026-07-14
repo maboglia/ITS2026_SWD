@@ -58,8 +58,9 @@ INDEX VERSION 1.134+C:\Users\maikol.mombelli\Desktop\Bogliaccino\ITS2026_SWD\lab
 2657639820.index
 1904305781.index
 2174517568.index
-2975263300.index
 2146071725.index
+2975263300.index
+3732710451.index
 380581932.index
 3446147585.index
 3967934178.index
@@ -99,6 +100,7 @@ INDEX VERSION 1.134+C:\Users\maikol.mombelli\Desktop\Bogliaccino\ITS2026_SWD\lab
 707211207.index
 1828267189.index
 2386692638.index
+1587258899.index
 2420130276.index
 1239345754.index
 1719398821.index
@@ -210,6 +212,7 @@ INDEX VERSION 1.134+C:\Users\maikol.mombelli\Desktop\Bogliaccino\ITS2026_SWD\lab
 3152424267.index
 835897084.index
 218410918.index
+80629920.index
 472621182.index
 1949337062.index
 257524290.index

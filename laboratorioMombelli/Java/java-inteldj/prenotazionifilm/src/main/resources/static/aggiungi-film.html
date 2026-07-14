@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aggiungi Nuovo Film</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+      /* Centra il form nella pagina per un look pulito ed elegante */
+      .form-card {
+        max-width: 600px;
+        margin: 3rem auto;
+        padding: 2.5rem;
+      }
+      .actions-container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .actions-container button, .actions-container a {
+        flex: 1;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <article class="form-card">
+        <header style="text-align: center; margin-bottom: 2rem;">
+          <h2>➕ Aggiungi un Nuovo Film</h2>
+          <p>Inserisci i dettagli del film per aggiungerlo al catalogo di Spring Boot</p>
+        </header>
+
+        <form id="film-form" onsubmit="aggiungiFilm(event)">
+          
+          <label for="titolo">Titolo del Film</label>
+          <input type="text" id="titolo" placeholder="Es. Inception" required>
+
+          <label for="regista">Regista</label>
+          <input type="text" id="regista" placeholder="Es. Christopher Nolan" required>
+
+          <label for="genere">Genere</label>
+          <select id="genere" required>
+            <option value="" disabled selected>Seleziona un genere...</option>
+            <option value="Azione">Azione</option>
+            <option value="Fantascienza">Fantascienza</option>
+            <option value="Drammatico">Drammatico</option>
+            <option value="Commedia">Commedia</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Horror">Horror</option>
+            <option value="Animazione">Animazione</option>
+          </select>
+
+          <div class="actions-container">
+            <a href="index.html" role="button" class="outline secondary">Annulla</a>
+            <button type="submit" id="submit-btn">Salva Film</button>
+          </div>
+
+        </form>
+      </article>
+    </main>
+
+    <script>
+      function aggiungiFilm(event) {
+        event.preventDefault(); // Impedisce il ricaricamento nativo della pagina
+
+        const submitBtn = document.getElementById("submit-btn");
+        
+        // Recupero i dati inseriti dall'utente
+        const titoloInput = document.getElementById("titolo").value.trim();
+        const registaInput = document.getElementById("regista").value.trim();
+        const genereInput = document.getElementById("genere").value;
+
+        // Disabilita il pulsante per evitare click multipli durante la fetch
+        submitBtn.ariaBusy = "true";
+        submitBtn.disabled = true;
+
+        // Costruisco il payload corrispondente alla classe Java FilmRequest
+        const filmPayload = {
+          titolo: titoloInput,
+          regista: registaInput,
+          genere: genereInput
+        };
+
+        // Chiamata POST verso il tuo endpoint @PostMapping in FilmController
+        fetch("http://localhost:8080/api/film", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(filmPayload)
+        })
+        .then(async (response) => {
+          // Se il server risponde con un errore (es. il film esiste già, status 500 o 400)
+          if (!response.ok) {
+            throw new Error("Il film potrebbe esistere già o si è verificato un errore sul server.");
+          }
+          return response.text(); // Leggiamo come testo ("film inserito con successo")
+        })
+        .then((msg) => {
+          alert("🎉 " + msg);
+          // Ritorna alla lista dei film principale dopo il successo
+          window.location.href = "index.html";
+        })
+        .catch((error) => {
+          console.error("Errore:", error);
+          alert("⚠️ Impossibile salvare: " + error.message);
+        })
+        .finally(() => {
+          // Ripristina lo stato del pulsante in caso di fallimento
+          submitBtn.ariaBusy = "false";
+          submitBtn.disabled = false;
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuova Programmazione</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+      .form-card {
+        max-width: 700px;
+        margin: 3rem auto;
+        padding: 2.5rem;
+      }
+      .actions-container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .actions-container button, .actions-container a {
+        flex: 1;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <article class="form-card">
+        <header style="text-align: center; margin-bottom: 2rem;">
+          <h2>📅 Crea Nuova Programmazione</h2>
+          <p>Associa un film a una sala cinematografica impostando data e prezzo</p>
+        </header>
+
+        <form id="programmazione-form" onsubmit="salvaProgrammazione(event)">
+          
+          <label for="select-film">Seleziona Film</label>
+          <select id="select-film" required>
+            <option value="" disabled selected>Caricamento film in corso...</option>
+          </select>
+
+          <label for="select-cinema">Seleziona Cinema / Sala</label>
+          <select id="select-cinema" required>
+            <option value="" disabled selected>Caricamento cinema in corso...</option>
+          </select>
+
+          <div class="grid">
+            <div>
+              <label for="data-ora">Data e Ora Proiezione</label>
+              <input type="datetime-local" id="data-ora" required>
+            </div>
+            
+            <div>
+              <label for="prezzo">Prezzo Biglietto (€)</label>
+              <input type="number" id="prezzo" step="0.01" min="0" placeholder="Es. 7.50" required>
+            </div>
+          </div>
+
+          <div class="actions-container">
+            <a href="index.html" role="button" class="outline secondary">Annulla</a>
+            <button type="submit" id="submit-btn">Crea Programmazione</button>
+          </div>
+
+        </form>
+      </article>
+    </main>
+
+    <script>
+      const selectFilm = document.getElementById("select-film");
+      const selectCinema = document.getElementById("select-cinema");
+      const submitBtn = document.getElementById("submit-btn");
+
+      // Carica i dati asincroni per popolare le select al caricamento della pagina
+      function inizializzaPagina() {
+        // Eseguiamo i fetch contemporaneamente
+        Promise.all([
+          fetch("http://localhost:8080/api/film").then(res => res.json()),
+          fetch("http://localhost:8080/api/cinema").then(res => res.json())
+        ])
+        .then(([films, cinemas]) => {
+          
+          // 1. Popola la select dei Film
+          selectFilm.innerHTML = '<option value="" disabled selected>Scegli un film...</option>';
+          films.forEach(film => {
+            selectFilm.innerHTML += `<option value="${film.id}">${film.titolo} (${film.regista})</option>`;
+          });
+
+          // 2. Popola la select dei Cinema
+          selectCinema.innerHTML = '<option value="" disabled selected>Scegli un cinema...</option>';
+          cinemas.forEach(cinema => {
+            selectCinema.innerHTML += `<option value="${cinema.id}">${cinema.nomeCinema} (${cinema.posti} posti)</option>`;
+          });
+        })
+        .catch(error => {
+          console.error("Errore nel caricamento dei dati iniziali:", error);
+          alert("⚠️ Impossibile comunicare con il backend per recuperare la lista dei film o dei cinema.");
+        });
+      }
+
+      // Gestione dell'invio del Form
+      function salvaProgrammazione(event) {
+        event.preventDefault();
+
+        const idFilm = parseInt(selectFilm.value);
+        const idCinema = parseInt(selectCinema.value);
+        const dataOra = document.getElementById("data-ora").value;
+        const prezzo = parseFloat(document.getElementById("prezzo").value);
+
+        // Blocco di sicurezza del bottone per evitare invii multipli accidentali
+        submitBtn.ariaBusy = "true";
+        submitBtn.disabled = true;
+
+        // Costruiamo il payload mappato sul tuo DTO Java NuovaProgrammazioneRequest
+        // Nota: datetime-local produce il formato "YYYY-MM-DDTHH:mm" accettato nativamente da LocalDateTime
+        const programmazionePayload = {
+          idFilm: idFilm,
+          idCinema: idCinema,
+          data: dataOra, 
+          prezzo: prezzo
+        };
+
+        // Modifica l'URL inserendo l'endpoint del controller dove hai inserito il metodo aggiungiNuovaProgrammazione
+        // Es. "http://localhost:8080/api/filminsala" o l'endpoint corretto
+        fetch("http://localhost:8080/api/filminsala", { 
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(programmazionePayload)
+        })
+        .then(async (response) => {
+          if (!response.ok) {
+            throw new Error("Errore durante il salvataggio della programmazione.");
+          }
+          return response.text(); // Ritorna "nuova programmazione salvata"
+        })
+        .then((msg) => {
+          alert("🎉 " + msg);
+          window.location.href = "index.html"; // Ritorna alla home catalogo
+        })
+        .catch((error) => {
+          console.error(error);
+          alert("⚠️ Errore: " + error.message);
+        })
+        .finally(() => {
+          submitBtn.ariaBusy = "false";
+          submitBtn.disabled = false;
+        });
+      }
+
+      // Avvia il caricamento delle liste
+      inizializzaPagina();
+    </script>
+  </body>
+</html>
