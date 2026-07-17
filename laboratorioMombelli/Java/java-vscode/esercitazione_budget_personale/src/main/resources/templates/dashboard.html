@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Dashboard - Budget Manager')}"></head>
+<body class="bg-light">
+<nav th:replace="~{fragments :: navbar}"></nav>
+
+<div class="container">
+    <h2 class="mb-4">Dashboard</h2>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <div class="card text-white bg-primary shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Saldo Totale</h6>
+                    <h4 class="mb-0" th:text="${#numbers.formatDecimal(dashboard.totalBalance, 1, 2)} + ' €'">0.00 €</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-success shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Entrate</h6>
+                    <h4 class="mb-0" th:text="${#numbers.formatDecimal(dashboard.totalIncome, 1, 2)} + ' €'">0.00 €</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-danger shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Uscite</h6>
+                    <h4 class="mb-0" th:text="${#numbers.formatDecimal(dashboard.totalExpense, 1, 2)} + ' €'">0.00 €</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-info shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Saldo Mensile</h6>
+                    <h4 class="mb-0" th:text="${#numbers.formatDecimal(dashboard.monthlyBalance, 1, 2)} + ' €'">0.00 €</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Spese per categoria</h5>
+                    <canvas id="categoryChart"></canvas>
+                    <p class="text-muted mt-3 mb-0" th:if="${dashboard.expensesByCategory.isEmpty()}">
+                        Nessuna spesa registrata.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo mensile</h5>
+                    <canvas id="monthlyChart"></canvas>
+                    <p class="text-muted mt-3 mb-0" th:if="${dashboard.monthlyBalances.isEmpty()}">
+                        Nessun dato disponibile.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script th:inline="javascript">
+    const categoryData = /*[[${dashboard.expensesByCategory}]]*/ {};
+    const monthlyData = /*[[${dashboard.monthlyBalances}]]*/ {};
+
+    if (Object.keys(categoryData).length > 0) {
+        new Chart(document.getElementById('categoryChart'), {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(categoryData),
+                datasets: [{ data: Object.values(categoryData) }]
+            }
+        });
+    }
+
+    if (Object.keys(monthlyData).length > 0) {
+        new Chart(document.getElementById('monthlyChart'), {
+            type: 'bar',
+            data: {
+                labels: Object.keys(monthlyData),
+                datasets: [{ label: 'Saldo', data: Object.values(monthlyData) }]
+            }
+        });
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Transazioni - Budget Manager')}"></head>
+<body class="bg-light">
+<nav th:replace="~{fragments :: navbar}"></nav>
+
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Transazioni</h2>
+        <a th:href="@{/transactions/new}" class="btn btn-primary">+ Nuova transazione</a>
+    </div>
+
+    <div th:if="${success}" class="alert alert-success" th:text="${success}"></div>
+
+    <form th:action="@{/transactions}" method="get" class="row g-2 mb-3">
+        <div class="col-auto">
+            <input type="text" name="category" class="form-control" placeholder="Filtra per categoria"
+                   th:value="${filterCategory}">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-outline-secondary">Filtra</button>
+            <a th:href="@{/transactions}" class="btn btn-outline-secondary">Reset</a>
+        </div>
+    </form>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Descrizione</th>
+                            <th>Categoria</th>
+                            <th>Tipo</th>
+                            <th class="text-end">Importo</th>
+                            <th>Ricevuta</th>
+                            <th class="text-end">Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:if="${transactions.isEmpty()}">
+                            <td colspan="7" class="text-center text-muted">Nessuna transazione trovata.</td>
+                        </tr>
+                        <tr th:each="t : ${transactions}">
+                            <td th:text="${#temporals.format(t.date, 'dd/MM/yyyy')}">01/01/2026</td>
+                            <td th:text="${t.description}">Descrizione</td>
+                            <td th:text="${t.category}">Categoria</td>
+                            <td>
+                                <span class="badge bg-success" th:if="${t.type.name() == 'ENTRATA'}">ENTRATA</span>
+                                <span class="badge bg-danger" th:if="${t.type.name() == 'USCITA'}">USCITA</span>
+                            </td>
+                            <td class="text-end" th:text="${#numbers.formatDecimal(t.amount, 1, 2)} + ' €'">0.00 €</td>
+                            <td>
+                                <a th:if="${t.receipt}" th:href="@{'/' + ${t.receipt}}" target="_blank">Vedi</a>
+                                <span th:unless="${t.receipt}" class="text-muted">—</span>
+                            </td>
+                            <td class="text-end">
+                                <a th:href="@{'/transactions/edit/' + ${t.id}}" class="btn btn-sm btn-outline-primary">Modifica</a>
+                                <form th:action="@{'/transactions/delete/' + ${t.id}}" method="post" class="d-inline"
+                                      onsubmit="return confirm('Eliminare questa transazione?');">
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">Elimina</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* ---- Pokédex custom styling (complements Bootstrap 5) ---- */
+
+body {
+    background: #f4f5f7;
+}
+
+.navbar-brand {
+    letter-spacing: .5px;
+}
+
+/* Sidebar type list: keep it tidy and scrollable on long lists */
+.type-list {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.type-list .list-group-item.active {
+    background-color: #35dc43;
+    border-color: #35dc96;
+}
+
+/* Clickable table rows */
+.pokemon-row {
+    cursor: pointer;
+    transition: background-color .12s ease-in-out;
+}
+
+.pokemon-row:hover {
+    background-color: #eafaec;
+}
+
+.pokemon-row .stretched-name {
+    color: #212529;
+}
+
+.pokemon-row:hover .stretched-name {
+    color: #51dc35;
+}
+
+/* Detail artwork */
+.pokemon-artwork {
+    max-height: 320px;
+    object-fit: contain;
+}
+
+/* Stat cards */
+.stat-grid .stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: .5rem .75rem;
+    background: #f8f9fa;
+    border: 1px solid #eceef1;
+    border-radius: .5rem;
+}
+
+.stat-grid .stat span {
+    color: #6c757d;
+    font-size: .85rem;
+}
+
+.stat-grid .stat strong {
+    font-size: 1.1rem;
+}
+
+.stat-grid .stat-total {
+    background: #eafaec;
+    border-color: #b7e4bf;
+}
