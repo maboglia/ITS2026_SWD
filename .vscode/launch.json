@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StoriaApplication",
+            "request": "launch",
+            "mainClass": "com.mombelli.storia.StoriaApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-MagazzinoApplication<it.bogliaccino-magazzino>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
