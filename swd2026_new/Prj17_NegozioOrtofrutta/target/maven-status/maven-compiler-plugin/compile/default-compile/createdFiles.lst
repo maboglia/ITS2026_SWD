@@ -1,0 +1,6 @@
+controllers\NegozioMVC.class
+services\NegozioServiceImpl.class
+repos\ProdottoRepoImpl.class
+entities\Prodotto.class
+services\NegozioService.class
+repos\ProdottoRepo.class
