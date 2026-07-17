@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" >
+</head>
+<body>
+    
+    <div class="container">
+
+        <div>
+            <h1>Pokedex</h1>
+            <p>Welcome to the Pokedex!</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type 1</th>
+                        <th>Type 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="pokemon : ${pokemonList}">
+                        <td th:text="${pokemon.getName()}"></td>
+                        <td th:text="${pokemon.getType1()}"></td>
+                        <td th:text="${pokemon.getType2()}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </div>
+
+        
+
+    </div>
+
+
+</body>
+</html>

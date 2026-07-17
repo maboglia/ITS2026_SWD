@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" >
+    <style>
+        a.secondary {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header th:insert="menu.html"></header>
+        <h1 th:text="${title}">Document</h1>
+
+        <article>
+            <h2 th:text="${question.getTitolo()}">Question</h2>
+            <h2 th:text="${question.getDescrizione()}">Question</h2>
+        </article>
+
+        <article>
+            <h3>Answers:</h3>
+            <ul>
+                <li th:each="answer : ${answers}" th:text="${answer}">Answer</li>
+            </ul>
+        </article>
+
+        <article>
+            <button class="btn btn-primary">
+                <a class="secondary" href="#" th:href="@{/quiz}">Reload</a>
+            </button>
+            <button class="btn btn-primary">
+                <a class="secondary" href="#" th:href="@{/}">Home</a>
+            </button>
+        </article>
+    </div>
+
+</body>
+</html>

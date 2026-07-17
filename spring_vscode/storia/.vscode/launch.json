@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-StoriaApplication<storia>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.maboglia.storia.StoriaApplication",
+            "projectName": "storia",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
