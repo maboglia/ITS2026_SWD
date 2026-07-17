@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogo Films</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+      /* Piccolo ritocco per dare uniformità alle card dei film */
+      .film-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        margin-bottom: 0; /* Gestito dalla griglia di Pico */
+      }
+      .film-card footer {
+        margin-top: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <header style="text-align: center; margin-bottom: 2rem;">
+        <h1>🎬 Catalogo Films</h1>
+        <p>Seleziona un film per vedere la programmazione nelle sale</p>
+      </header>
+
+      <div id="films-grid" class="grid">
+        <p aria-busy="true">Caricamento dei film in corso...</p>
+      </div>
+    </main>
+
+    <script>
+      // Utilizzo di un ID specifico per evitare conflitti con i container di Pico
+      const gridContainer = document.getElementById("films-grid");
+
+      function getData() {
+        fetch("http://localhost:8080/api/film")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Errore nel recupero dei film dal server");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            // Se non ci sono film nel database
+            if (data.length === 0) {
+              gridContainer.innerHTML = "<p>Nessun film attualmente disponibile nel catalogo.</p>";
+              return;
+            }
+
+            // Stringa di appoggio per ottimizzare i rendering del DOM
+            let htmlContent = "";
+
+            data.forEach((item) => {
+              htmlContent += `   
+                <div>
+                  <article class="film-card">
+                    <header>
+                      <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">${item.titolo}</h2>
+                    </header>
+                    
+                    <p style="margin-bottom: 0.5rem;"><strong>Regista:</strong> ${item.regista}</p>
+                    <p><strong>Genere:</strong> <mark>${item.genere}</mark></p>
+                    
+                    <footer>
+                      <a href="dettagli.html?id=${item.id}" role="button" class="contrast w-100">
+                        Vedi Dettagli →
+                      </a>
+                    </footer>
+                  </article>
+                </div>
+              `;
+            });
+
+            // Iniettiamo tutto l'HTML in un colpo solo
+            gridContainer.innerHTML = htmlContent;
+          })
+          .catch((error) => {
+            console.error("Errore:", error);
+            gridContainer.innerHTML = `
+              <div style="grid-column: 1 / -1; text-align: center;">
+                <p style="color: var(--pico-form-element-invalid-border-color);">
+                  ⚠️ Impossibile caricare i film. Controlla che il server backend sia avviato.
+                </p>
+              </div>
+            `;
+          });
+      }
+
+      // Avvia il caricamento dei dati
+      getData();
+    </script>
+  </body>
+</html>
