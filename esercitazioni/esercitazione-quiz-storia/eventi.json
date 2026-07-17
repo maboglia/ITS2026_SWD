@@ -1,0 +1,1299 @@
+[
+    {
+      "id": 301,
+      "anno": 1789,
+      "titolo": "Rivoluzione francese",
+      "luogo": "Parigi",
+      "civilta": "Francia",
+      "categoria": "rivoluzione",
+      "descrizione": "Presa della Bastiglia e inizio della Rivoluzione francese."
+    },
+    {
+      "id": 302,
+      "anno": 1792,
+      "titolo": "Proclamazione della Prima Repubblica francese",
+      "luogo": "Parigi",
+      "civilta": "Francia",
+      "categoria": "politica",
+      "descrizione": "Abolizione della monarchia francese."
+    },
+    {
+      "id": 303,
+      "anno": 1799,
+      "titolo": "Colpo di Stato di Napoleone",
+      "luogo": "Francia",
+      "civilta": "Francia",
+      "categoria": "politica",
+      "descrizione": "Napoleone Bonaparte diventa Primo Console."
+    },
+    {
+      "id": 304,
+      "anno": 1804,
+      "titolo": "Napoleone imperatore",
+      "luogo": "Parigi",
+      "civilta": "Francia",
+      "categoria": "politica",
+      "descrizione": "Napoleone viene incoronato imperatore dei francesi."
+    },
+    {
+      "id": 305,
+      "anno": 1815,
+      "titolo": "Battaglia di Waterloo",
+      "luogo": "Belgio",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "Sconfitta definitiva di Napoleone."
+    },
+    {
+      "id": 306,
+      "anno": 1815,
+      "titolo": "Congresso di Vienna",
+      "luogo": "Vienna",
+      "civilta": "Europa",
+      "categoria": "politica",
+      "descrizione": "Ridefinizione dell'assetto europeo dopo le guerre napoleoniche."
+    },
+    {
+      "id": 307,
+      "anno": 1848,
+      "titolo": "Primavera dei Popoli",
+      "luogo": "Europa",
+      "civilta": "Europa",
+      "categoria": "rivoluzione",
+      "descrizione": "Ondata di rivoluzioni liberali e nazionali."
+    },
+    {
+      "id": 308,
+      "anno": 1861,
+      "titolo": "Proclamazione del Regno d'Italia",
+      "luogo": "Torino",
+      "civilta": "Italia",
+      "categoria": "politica",
+      "descrizione": "Nascita del Regno d'Italia."
+    },
+    {
+      "id": 309,
+      "anno": 1865,
+      "titolo": "Fine della Guerra Civile Americana",
+      "luogo": "Stati Uniti",
+      "civilta": "Stati Uniti",
+      "categoria": "guerra",
+      "descrizione": "Abolizione della schiavitù negli Stati Uniti."
+    },
+    {
+      "id": 310,
+      "anno": 1870,
+      "titolo": "Presa di Roma",
+      "luogo": "Roma",
+      "civilta": "Italia",
+      "categoria": "politica",
+      "descrizione": "Completamento dell'Unità d'Italia."
+    },
+    {
+      "id": 311,
+      "anno": 1871,
+      "titolo": "Unificazione della Germania",
+      "luogo": "Versailles",
+      "civilta": "Germania",
+      "categoria": "politica",
+      "descrizione": "Proclamazione dell'Impero tedesco."
+    },
+    {
+      "id": 312,
+      "anno": 1885,
+      "titolo": "Conferenza di Berlino",
+      "luogo": "Berlino",
+      "civilta": "Europa",
+      "categoria": "politica",
+      "descrizione": "Divisione coloniale dell'Africa."
+    },
+    {
+      "id": 313,
+      "anno": 1903,
+      "titolo": "Primo volo dei fratelli Wright",
+      "luogo": "Stati Uniti",
+      "civilta": "Stati Uniti",
+      "categoria": "tecnologia",
+      "descrizione": "Primo volo controllato di un aeroplano."
+    },
+    {
+      "id": 314,
+      "anno": 1914,
+      "titolo": "Inizio della Prima Guerra Mondiale",
+      "luogo": "Europa",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "Scoppio del primo conflitto mondiale."
+    },
+    {
+      "id": 315,
+      "anno": 1917,
+      "titolo": "Rivoluzione Russa",
+      "luogo": "Russia",
+      "civilta": "Russia",
+      "categoria": "rivoluzione",
+      "descrizione": "I bolscevichi prendono il potere."
+    },
+    {
+      "id": 316,
+      "anno": 1918,
+      "titolo": "Fine della Prima Guerra Mondiale",
+      "luogo": "Europa",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "Armistizio dell'11 novembre."
+    },
+    {
+      "id": 317,
+      "anno": 1919,
+      "titolo": "Trattato di Versailles",
+      "luogo": "Versailles",
+      "civilta": "Europa",
+      "categoria": "politica",
+      "descrizione": "Conclusione ufficiale della Prima Guerra Mondiale."
+    },
+    {
+      "id": 318,
+      "anno": 1922,
+      "titolo": "Marcia su Roma",
+      "luogo": "Roma",
+      "civilta": "Italia",
+      "categoria": "politica",
+      "descrizione": "Inizio del regime fascista."
+    },
+    {
+      "id": 319,
+      "anno": 1929,
+      "titolo": "Crollo di Wall Street",
+      "luogo": "New York",
+      "civilta": "Stati Uniti",
+      "categoria": "economia",
+      "descrizione": "Inizio della Grande Depressione."
+    },
+    {
+      "id": 320,
+      "anno": 1933,
+      "titolo": "Hitler al potere",
+      "luogo": "Germania",
+      "civilta": "Germania",
+      "categoria": "politica",
+      "descrizione": "Adolf Hitler diventa cancelliere."
+    },
+    {
+      "id": 321,
+      "anno": 1939,
+      "titolo": "Inizio della Seconda Guerra Mondiale",
+      "luogo": "Polonia",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "La Germania invade la Polonia."
+    },
+    {
+      "id": 322,
+      "anno": 1945,
+      "titolo": "Fine della Seconda Guerra Mondiale",
+      "luogo": "Mondo",
+      "civilta": "Alleati",
+      "categoria": "guerra",
+      "descrizione": "Resa della Germania e del Giappone."
+    },
+    {
+      "id": 323,
+      "anno": 1945,
+      "titolo": "Fondazione delle Nazioni Unite",
+      "luogo": "San Francisco",
+      "civilta": "ONU",
+      "categoria": "politica",
+      "descrizione": "Nasce l'Organizzazione delle Nazioni Unite."
+    },
+    {
+      "id": 324,
+      "anno": 1947,
+      "titolo": "Inizio della Guerra Fredda",
+      "luogo": "Mondo",
+      "civilta": "USA e URSS",
+      "categoria": "politica",
+      "descrizione": "Contrapposizione tra blocco occidentale e blocco sovietico."
+    },
+    {
+      "id": 325,
+      "anno": 1948,
+      "titolo": "Dichiarazione Universale dei Diritti Umani",
+      "luogo": "Parigi",
+      "civilta": "ONU",
+      "categoria": "diritto",
+      "descrizione": "L'ONU approva la Dichiarazione Universale dei Diritti Umani."
+    },
+    {
+      "id": 326,
+      "anno": 1948,
+      "titolo": "Costituzione della Repubblica Italiana",
+      "luogo": "Roma",
+      "civilta": "Italia",
+      "categoria": "diritto",
+      "descrizione": "Entra in vigore la Costituzione italiana."
+    },
+    {
+      "id": 327,
+      "anno": 1957,
+      "titolo": "Trattati di Roma",
+      "luogo": "Roma",
+      "civilta": "Europa",
+      "categoria": "politica",
+      "descrizione": "Nasce la Comunità Economica Europea."
+    },
+    {
+      "id": 328,
+      "anno": 1961,
+      "titolo": "Costruzione del Muro di Berlino",
+      "luogo": "Berlino",
+      "civilta": "Germania",
+      "categoria": "politica",
+      "descrizione": "Simbolo della Guerra Fredda."
+    },
+    {
+      "id": 329,
+      "anno": 1969,
+      "titolo": "Primo uomo sulla Luna",
+      "luogo": "Luna",
+      "civilta": "Stati Uniti",
+      "categoria": "scienza",
+      "descrizione": "Missione Apollo 11."
+    },
+    {
+      "id": 330,
+      "anno": 1989,
+      "titolo": "Caduta del Muro di Berlino",
+      "luogo": "Berlino",
+      "civilta": "Germania",
+      "categoria": "politica",
+      "descrizione": "Fine simbolica della Guerra Fredda."
+    },
+    {
+      "id": 331,
+      "anno": 1991,
+      "titolo": "Dissoluzione dell'Unione Sovietica",
+      "luogo": "Mosca",
+      "civilta": "URSS",
+      "categoria": "politica",
+      "descrizione": "Fine dell'Unione Sovietica."
+    },
+    {
+      "id": 332,
+      "anno": 1992,
+      "titolo": "Trattato di Maastricht",
+      "luogo": "Maastricht",
+      "civilta": "Unione Europea",
+      "categoria": "politica",
+      "descrizione": "Nasce ufficialmente l'Unione Europea."
+    },
+    {
+      "id": 333,
+      "anno": 2001,
+      "titolo": "Attentati dell'11 settembre",
+      "luogo": "New York",
+      "civilta": "Stati Uniti",
+      "categoria": "terrorismo",
+      "descrizione": "Attacchi terroristici contro gli Stati Uniti."
+    },
+    {
+      "id": 334,
+      "anno": 2002,
+      "titolo": "Introduzione dell'euro",
+      "luogo": "Europa",
+      "civilta": "Unione Europea",
+      "categoria": "economia",
+      "descrizione": "Entrano in circolazione le banconote e le monete in euro."
+    },
+    {
+      "id": 335,
+      "anno": 2008,
+      "titolo": "Crisi finanziaria globale",
+      "luogo": "Mondo",
+      "civilta": "Economia mondiale",
+      "categoria": "economia",
+      "descrizione": "Fallimento di Lehman Brothers e crisi finanziaria internazionale."
+    },
+    {
+      "id": 336,
+      "anno": 2020,
+      "titolo": "Pandemia di COVID-19",
+      "luogo": "Mondo",
+      "civilta": "Mondo",
+      "categoria": "epidemia",
+      "descrizione": "La pandemia di COVID-19 provoca una crisi sanitaria ed economica globale."
+    },
+    {
+      "id": 337,
+      "anno": 2022,
+      "titolo": "Invasione russa dell'Ucraina",
+      "luogo": "Ucraina",
+      "civilta": "Russia e Ucraina",
+      "categoria": "guerra",
+      "descrizione": "La Russia invade l'Ucraina, dando inizio a un conflitto su larga scala in Europa."
+    },
+     {
+      "id": 101,
+      "anno": 476,
+      "titolo": "Caduta dell'Impero Romano d'Occidente",
+      "luogo": "Ravenna",
+      "civilta": "Romani",
+      "categoria": "politica",
+      "descrizione": "Odoacre depone Romolo Augustolo. Convenzionalmente segna l'inizio del Medioevo."
+    },
+    {
+      "id": 102,
+      "anno": 493,
+      "titolo": "Regno degli Ostrogoti in Italia",
+      "luogo": "Italia",
+      "civilta": "Ostrogoti",
+      "categoria": "politica",
+      "descrizione": "Teodorico fonda il regno ostrogoto."
+    },
+    {
+      "id": 103,
+      "anno": 527,
+      "titolo": "Ascesa di Giustiniano",
+      "luogo": "Costantinopoli",
+      "civilta": "Bizantini",
+      "categoria": "politica",
+      "descrizione": "Inizio del regno di Giustiniano I."
+    },
+    {
+      "id": 104,
+      "anno": 529,
+      "titolo": "Fondazione di Montecassino",
+      "luogo": "Montecassino",
+      "civilta": "Cristianesimo",
+      "categoria": "religione",
+      "descrizione": "San Benedetto fonda il monastero e la regola benedettina."
+    },
+    {
+      "id": 105,
+      "anno": 533,
+      "titolo": "Corpus Iuris Civilis",
+      "luogo": "Costantinopoli",
+      "civilta": "Bizantini",
+      "categoria": "diritto",
+      "descrizione": "Raccolta del diritto romano voluta da Giustiniano."
+    },
+    {
+      "id": 106,
+      "anno": 568,
+      "titolo": "Invasione longobarda",
+      "luogo": "Italia",
+      "civilta": "Longobardi",
+      "categoria": "guerra",
+      "descrizione": "I Longobardi conquistano gran parte della penisola italiana."
+    },
+    {
+      "id": 107,
+      "anno": 622,
+      "titolo": "Egira",
+      "luogo": "Medina",
+      "civilta": "Islam",
+      "categoria": "religione",
+      "descrizione": "Maometto lascia La Mecca. Inizio del calendario islamico."
+    },
+    {
+      "id": 108,
+      "anno": 632,
+      "titolo": "Morte di Maometto",
+      "luogo": "Medina",
+      "civilta": "Islam",
+      "categoria": "religione",
+      "descrizione": "Inizia la rapida espansione del mondo islamico."
+    },
+    {
+      "id": 109,
+      "anno": 711,
+      "titolo": "Conquista musulmana della Spagna",
+      "luogo": "Spagna",
+      "civilta": "Islam",
+      "categoria": "guerra",
+      "descrizione": "Gli Arabi attraversano Gibilterra e conquistano gran parte della penisola iberica."
+    },
+    {
+      "id": 110,
+      "anno": 732,
+      "titolo": "Battaglia di Poitiers",
+      "luogo": "Francia",
+      "civilta": "Franchi",
+      "categoria": "guerra",
+      "descrizione": "Carlo Martello arresta l'avanzata araba in Europa occidentale."
+    },
+    {
+      "id": 111,
+      "anno": 754,
+      "titolo": "Nascita dello Stato della Chiesa",
+      "luogo": "Italia",
+      "civilta": "Papato",
+      "categoria": "politica",
+      "descrizione": "Donazione di Pipino al Papa."
+    },
+    {
+      "id": 112,
+      "anno": 774,
+      "titolo": "Carlo Magno conquista il Regno Longobardo",
+      "luogo": "Italia",
+      "civilta": "Franchi",
+      "categoria": "guerra",
+      "descrizione": "Fine del regno longobardo in Italia."
+    },
+    {
+      "id": 113,
+      "anno": 800,
+      "titolo": "Incoronazione di Carlo Magno",
+      "luogo": "Roma",
+      "civilta": "Franchi",
+      "categoria": "politica",
+      "descrizione": "Nasce il Sacro Romano Impero."
+    },
+    {
+      "id": 114,
+      "anno": 843,
+      "titolo": "Trattato di Verdun",
+      "luogo": "Verdun",
+      "civilta": "Franchi",
+      "categoria": "politica",
+      "descrizione": "Divisione dell'Impero Carolingio."
+    },
+    {
+      "id": 115,
+      "anno": 962,
+      "titolo": "Nascita del Sacro Romano Impero Germanico",
+      "luogo": "Roma",
+      "civilta": "Germani",
+      "categoria": "politica",
+      "descrizione": "Ottone I viene incoronato imperatore."
+    },
+    {
+      "id": 116,
+      "anno": 988,
+      "titolo": "Cristianizzazione della Rus'",
+      "luogo": "Kiev",
+      "civilta": "Rus'",
+      "categoria": "religione",
+      "descrizione": "Vladimir I adotta il cristianesimo ortodosso."
+    },
+    {
+      "id": 117,
+      "anno": 1054,
+      "titolo": "Scisma d'Oriente",
+      "luogo": "Costantinopoli",
+      "civilta": "Cristianesimo",
+      "categoria": "religione",
+      "descrizione": "Separazione tra Chiesa cattolica e Chiesa ortodossa."
+    },
+    {
+      "id": 118,
+      "anno": 1066,
+      "titolo": "Battaglia di Hastings",
+      "luogo": "Inghilterra",
+      "civilta": "Normanni",
+      "categoria": "guerra",
+      "descrizione": "Guglielmo il Conquistatore conquista l'Inghilterra."
+    },
+    {
+      "id": 119,
+      "anno": 1095,
+      "titolo": "Predicazione della Prima Crociata",
+      "luogo": "Clermont",
+      "civilta": "Cristianesimo",
+      "categoria": "religione",
+      "descrizione": "Papa Urbano II indice la Prima Crociata."
+    },
+    {
+      "id": 120,
+      "anno": 1099,
+      "titolo": "Conquista di Gerusalemme",
+      "luogo": "Gerusalemme",
+      "civilta": "Crociati",
+      "categoria": "guerra",
+      "descrizione": "Conclusione della Prima Crociata."
+    },
+    {
+      "id": 121,
+      "anno": 1158,
+      "titolo": "Dieta di Roncaglia",
+      "luogo": "Italia",
+      "civilta": "Sacro Romano Impero",
+      "categoria": "politica",
+      "descrizione": "Federico Barbarossa riafferma l'autorità imperiale."
+    },
+    {
+      "id": 122,
+      "anno": 1176,
+      "titolo": "Battaglia di Legnano",
+      "luogo": "Italia",
+      "civilta": "Comuni italiani",
+      "categoria": "guerra",
+      "descrizione": "La Lega Lombarda sconfigge Federico Barbarossa."
+    },
+    {
+      "id": 123,
+      "anno": 1215,
+      "titolo": "Magna Carta",
+      "luogo": "Inghilterra",
+      "civilta": "Inghilterra",
+      "categoria": "diritto",
+      "descrizione": "Il re Giovanni concede la Magna Carta Libertatum."
+    },
+    {
+      "id": 124,
+      "anno": 1223,
+      "titolo": "Regola francescana",
+      "luogo": "Roma",
+      "civilta": "Cristianesimo",
+      "categoria": "religione",
+      "descrizione": "Approvazione della regola di San Francesco."
+    },
+    {
+      "id": 125,
+      "anno": 1231,
+      "titolo": "Costituzioni di Melfi",
+      "luogo": "Melfi",
+      "civilta": "Regno di Sicilia",
+      "categoria": "diritto",
+      "descrizione": "Federico II promulga un moderno codice legislativo."
+    },
+    {
+      "id": 126,
+      "anno": 1271,
+      "titolo": "Viaggio di Marco Polo",
+      "luogo": "Venezia",
+      "civilta": "Veneziani",
+      "categoria": "esplorazione",
+      "descrizione": "Inizio del viaggio verso la Cina."
+    },
+    {
+      "id": 127,
+      "anno": 1291,
+      "titolo": "Caduta di Acri",
+      "luogo": "Terra Santa",
+      "civilta": "Crociati",
+      "categoria": "guerra",
+      "descrizione": "Fine degli Stati crociati in Oriente."
+    },
+    {
+      "id": 128,
+      "anno": 1300,
+      "titolo": "Primo Giubileo",
+      "luogo": "Roma",
+      "civilta": "Papato",
+      "categoria": "religione",
+      "descrizione": "Papa Bonifacio VIII indice il primo Anno Santo."
+    },
+    {
+      "id": 129,
+      "anno": 1309,
+      "titolo": "Cattività avignonese",
+      "luogo": "Avignone",
+      "civilta": "Papato",
+      "categoria": "religione",
+      "descrizione": "Trasferimento della sede papale ad Avignone."
+    },
+    {
+      "id": 130,
+      "anno": 1337,
+      "titolo": "Inizio della Guerra dei Cent'Anni",
+      "luogo": "Francia",
+      "civilta": "Francia e Inghilterra",
+      "categoria": "guerra",
+      "descrizione": "Lungo conflitto tra Francia e Inghilterra."
+    },
+    {
+      "id": 131,
+      "anno": 1347,
+      "titolo": "Peste Nera",
+      "luogo": "Europa",
+      "civilta": "Europa",
+      "categoria": "epidemia",
+      "descrizione": "La peste devasta il continente europeo."
+    },
+    {
+      "id": 132,
+      "anno": 1378,
+      "titolo": "Scisma d'Occidente",
+      "luogo": "Europa",
+      "civilta": "Papato",
+      "categoria": "religione",
+      "descrizione": "Divisione della Chiesa con più papi contemporaneamente."
+    },
+    {
+      "id": 133,
+      "anno": 1415,
+      "titolo": "Concilio di Costanza",
+      "luogo": "Costanza",
+      "civilta": "Cristianesimo",
+      "categoria": "religione",
+      "descrizione": "Fine dello Scisma d'Occidente."
+    },
+    {
+      "id": 134,
+      "anno": 1429,
+      "titolo": "Giovanna d'Arco libera Orléans",
+      "luogo": "Francia",
+      "civilta": "Francia",
+      "categoria": "guerra",
+      "descrizione": "Svolta decisiva della Guerra dei Cent'Anni."
+    },
+    {
+      "id": 135,
+      "anno": 1453,
+      "titolo": "Caduta di Costantinopoli",
+      "luogo": "Costantinopoli",
+      "civilta": "Impero Ottomano",
+      "categoria": "guerra",
+      "descrizione": "I Turchi ottomani conquistano Costantinopoli. Per molti storici segna la fine del Medioevo."
+    },
+    {
+      "id": 136,
+      "anno": 1455,
+      "titolo": "Stampa a caratteri mobili",
+      "luogo": "Magonza",
+      "civilta": "Europa",
+      "categoria": "tecnologia",
+      "descrizione": "Johannes Gutenberg perfeziona la stampa moderna."
+    },
+    {
+      "id": 137,
+      "anno": 1492,
+      "titolo": "Scoperta dell'America",
+      "luogo": "Atlantico",
+      "civilta": "Europa",
+      "categoria": "esplorazione",
+      "descrizione": "Cristoforo Colombo raggiunge il continente americano. Convenzionalmente segna la fine del Medioevo e l'inizio dell'Età Moderna."
+    },
+      {
+      "id": 201,
+      "anno": 1492,
+      "titolo": "Scoperta dell'America",
+      "luogo": "Bahamas",
+      "civilta": "Spagna",
+      "categoria": "esplorazione",
+      "descrizione": "Cristoforo Colombo raggiunge il continente americano."
+    },
+    {
+      "id": 202,
+      "anno": 1494,
+      "titolo": "Trattato di Tordesillas",
+      "luogo": "Tordesillas",
+      "civilta": "Spagna e Portogallo",
+      "categoria": "politica",
+      "descrizione": "Spagna e Portogallo si dividono le nuove terre extraeuropee."
+    },
+    {
+      "id": 203,
+      "anno": 1498,
+      "titolo": "Vasco da Gama raggiunge l'India",
+      "luogo": "Calicut",
+      "civilta": "Portogallo",
+      "categoria": "esplorazione",
+      "descrizione": "Apertura della rotta marittima verso l'India."
+    },
+    {
+      "id": 204,
+      "anno": 1503,
+      "titolo": "La Gioconda",
+      "luogo": "Firenze",
+      "civilta": "Rinascimento",
+      "categoria": "arte",
+      "descrizione": "Leonardo da Vinci inizia il celebre dipinto."
+    },
+    {
+      "id": 205,
+      "anno": 1517,
+      "titolo": "Le 95 tesi di Martin Lutero",
+      "luogo": "Wittenberg",
+      "civilta": "Germania",
+      "categoria": "religione",
+      "descrizione": "Inizio della Riforma protestante."
+    },
+    {
+      "id": 206,
+      "anno": 1519,
+      "titolo": "Magellano inizia la circumnavigazione",
+      "luogo": "Siviglia",
+      "civilta": "Spagna",
+      "categoria": "esplorazione",
+      "descrizione": "Prima spedizione intorno al mondo."
+    },
+    {
+      "id": 207,
+      "anno": 1521,
+      "titolo": "Caduta dell'Impero Azteco",
+      "luogo": "Tenochtitlán",
+      "civilta": "Spagna",
+      "categoria": "guerra",
+      "descrizione": "Hernán Cortés conquista la capitale azteca."
+    },
+    {
+      "id": 208,
+      "anno": 1527,
+      "titolo": "Sacco di Roma",
+      "luogo": "Roma",
+      "civilta": "Sacro Romano Impero",
+      "categoria": "guerra",
+      "descrizione": "Le truppe imperiali devastano Roma."
+    },
+    {
+      "id": 209,
+      "anno": 1534,
+      "titolo": "Atto di Supremazia",
+      "luogo": "Inghilterra",
+      "civilta": "Inghilterra",
+      "categoria": "religione",
+      "descrizione": "Nasce la Chiesa anglicana."
+    },
+    {
+      "id": 210,
+      "anno": 1543,
+      "titolo": "Rivoluzione copernicana",
+      "luogo": "Norimberga",
+      "civilta": "Europa",
+      "categoria": "scienza",
+      "descrizione": "Copernico pubblica il modello eliocentrico."
+    },
+    {
+      "id": 211,
+      "anno": 1545,
+      "titolo": "Concilio di Trento",
+      "luogo": "Trento",
+      "civilta": "Chiesa cattolica",
+      "categoria": "religione",
+      "descrizione": "Inizio della Controriforma."
+    },
+    {
+      "id": 212,
+      "anno": 1555,
+      "titolo": "Pace di Augusta",
+      "luogo": "Augusta",
+      "civilta": "Sacro Romano Impero",
+      "categoria": "politica",
+      "descrizione": "Riconoscimento del luteranesimo nei principati tedeschi."
+    },
+    {
+      "id": 213,
+      "anno": 1571,
+      "titolo": "Battaglia di Lepanto",
+      "luogo": "Golfo di Patrasso",
+      "civilta": "Lega Santa",
+      "categoria": "guerra",
+      "descrizione": "La flotta cristiana sconfigge quella ottomana."
+    },
+    {
+      "id": 214,
+      "anno": 1588,
+      "titolo": "Sconfitta dell'Invincibile Armata",
+      "luogo": "Canale della Manica",
+      "civilta": "Inghilterra",
+      "categoria": "guerra",
+      "descrizione": "La flotta inglese respinge l'Armada spagnola."
+    },
+    {
+      "id": 215,
+      "anno": 1598,
+      "titolo": "Editto di Nantes",
+      "luogo": "Francia",
+      "civilta": "Francia",
+      "categoria": "religione",
+      "descrizione": "Libertà religiosa agli ugonotti."
+    },
+    {
+      "id": 216,
+      "anno": 1600,
+      "titolo": "Esecuzione di Giordano Bruno",
+      "luogo": "Roma",
+      "civilta": "Italia",
+      "categoria": "scienza",
+      "descrizione": "Il filosofo viene condannato al rogo."
+    },
+    {
+      "id": 217,
+      "anno": 1609,
+      "titolo": "Galileo osserva il cielo con il telescopio",
+      "luogo": "Padova",
+      "civilta": "Italia",
+      "categoria": "scienza",
+      "descrizione": "Inizio dell'astronomia moderna."
+    },
+    {
+      "id": 218,
+      "anno": 1618,
+      "titolo": "Guerra dei Trent'Anni",
+      "luogo": "Europa centrale",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "Grande conflitto religioso e politico europeo."
+    },
+    {
+      "id": 219,
+      "anno": 1642,
+      "titolo": "Inizio della Guerra Civile Inglese",
+      "luogo": "Inghilterra",
+      "civilta": "Inghilterra",
+      "categoria": "guerra",
+      "descrizione": "Scontro tra Parlamento e re Carlo I."
+    },
+    {
+      "id": 220,
+      "anno": 1648,
+      "titolo": "Pace di Vestfalia",
+      "luogo": "Vestfalia",
+      "civilta": "Europa",
+      "categoria": "politica",
+      "descrizione": "Fine della Guerra dei Trent'Anni e nascita del sistema degli Stati moderni."
+    },
+    {
+      "id": 221,
+      "anno": 1661,
+      "titolo": "Inizio del regno personale di Luigi XIV",
+      "luogo": "Francia",
+      "civilta": "Francia",
+      "categoria": "politica",
+      "descrizione": "Apogeo dell'assolutismo monarchico."
+    },
+    {
+      "id": 222,
+      "anno": 1687,
+      "titolo": "Principia Mathematica",
+      "luogo": "Londra",
+      "civilta": "Inghilterra",
+      "categoria": "scienza",
+      "descrizione": "Isaac Newton pubblica le leggi della gravitazione universale."
+    },
+    {
+      "id": 223,
+      "anno": 1688,
+      "titolo": "Gloriosa Rivoluzione",
+      "luogo": "Inghilterra",
+      "civilta": "Inghilterra",
+      "categoria": "politica",
+      "descrizione": "Affermata la monarchia parlamentare."
+    },
+    {
+      "id": 224,
+      "anno": 1689,
+      "titolo": "Bill of Rights",
+      "luogo": "Londra",
+      "civilta": "Inghilterra",
+      "categoria": "diritto",
+      "descrizione": "Limitazione dei poteri del sovrano e tutela del Parlamento."
+    },
+    {
+      "id": 225,
+      "anno": 1701,
+      "titolo": "Guerra di successione spagnola",
+      "luogo": "Europa",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "Conflitto per l'eredità della corona di Spagna."
+    },
+    {
+      "id": 226,
+      "anno": 1707,
+      "titolo": "Nascita della Gran Bretagna",
+      "luogo": "Londra",
+      "civilta": "Gran Bretagna",
+      "categoria": "politica",
+      "descrizione": "Unione tra Inghilterra e Scozia."
+    },
+    {
+      "id": 227,
+      "anno": 1751,
+      "titolo": "Pubblicazione dell'Encyclopédie",
+      "luogo": "Parigi",
+      "civilta": "Illuminismo",
+      "categoria": "cultura",
+      "descrizione": "Diderot e d'Alembert avviano la pubblicazione dell'opera simbolo dell'Illuminismo."
+    },
+    {
+      "id": 228,
+      "anno": 1756,
+      "titolo": "Guerra dei Sette Anni",
+      "luogo": "Europa",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "Primo conflitto realmente mondiale."
+    },
+    {
+      "id": 229,
+      "anno": 1769,
+      "titolo": "Macchina a vapore di James Watt",
+      "luogo": "Scozia",
+      "civilta": "Gran Bretagna",
+      "categoria": "tecnologia",
+      "descrizione": "Perfezionamento della macchina a vapore, simbolo della Rivoluzione Industriale."
+    },
+    {
+      "id": 230,
+      "anno": 1776,
+      "titolo": "Dichiarazione d'Indipendenza degli Stati Uniti",
+      "luogo": "Filadelfia",
+      "civilta": "Stati Uniti",
+      "categoria": "politica",
+      "descrizione": "Le tredici colonie dichiarano l'indipendenza dalla Gran Bretagna."
+    },
+    {
+      "id": 231,
+      "anno": 1783,
+      "titolo": "Trattato di Parigi",
+      "luogo": "Parigi",
+      "civilta": "Stati Uniti",
+      "categoria": "politica",
+      "descrizione": "La Gran Bretagna riconosce l'indipendenza degli Stati Uniti."
+    },
+    {
+      "id": 232,
+      "anno": 1787,
+      "titolo": "Costituzione degli Stati Uniti",
+      "luogo": "Filadelfia",
+      "civilta": "Stati Uniti",
+      "categoria": "diritto",
+      "descrizione": "Approvazione della prima moderna costituzione scritta ancora in vigore."
+    },
+    {
+      "id": 233,
+      "anno": 1789,
+      "titolo": "Presa della Bastiglia",
+      "luogo": "Parigi",
+      "civilta": "Francia",
+      "categoria": "rivoluzione",
+      "descrizione": "Inizio della Rivoluzione francese e convenzionale fine dell'Età Moderna."
+    },
+        {
+      "id": 301,
+      "anno": 1789,
+      "titolo": "Rivoluzione francese",
+      "luogo": "Parigi",
+      "civilta": "Francia",
+      "categoria": "rivoluzione",
+      "descrizione": "Presa della Bastiglia e inizio della Rivoluzione francese."
+    },
+    {
+      "id": 302,
+      "anno": 1792,
+      "titolo": "Proclamazione della Prima Repubblica francese",
+      "luogo": "Parigi",
+      "civilta": "Francia",
+      "categoria": "politica",
+      "descrizione": "Abolizione della monarchia francese."
+    },
+    {
+      "id": 303,
+      "anno": 1799,
+      "titolo": "Colpo di Stato di Napoleone",
+      "luogo": "Francia",
+      "civilta": "Francia",
+      "categoria": "politica",
+      "descrizione": "Napoleone Bonaparte diventa Primo Console."
+    },
+    {
+      "id": 304,
+      "anno": 1804,
+      "titolo": "Napoleone imperatore",
+      "luogo": "Parigi",
+      "civilta": "Francia",
+      "categoria": "politica",
+      "descrizione": "Napoleone viene incoronato imperatore dei francesi."
+    },
+    {
+      "id": 305,
+      "anno": 1815,
+      "titolo": "Battaglia di Waterloo",
+      "luogo": "Belgio",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "Sconfitta definitiva di Napoleone."
+    },
+    {
+      "id": 306,
+      "anno": 1815,
+      "titolo": "Congresso di Vienna",
+      "luogo": "Vienna",
+      "civilta": "Europa",
+      "categoria": "politica",
+      "descrizione": "Ridefinizione dell'assetto europeo dopo le guerre napoleoniche."
+    },
+    {
+      "id": 307,
+      "anno": 1848,
+      "titolo": "Primavera dei Popoli",
+      "luogo": "Europa",
+      "civilta": "Europa",
+      "categoria": "rivoluzione",
+      "descrizione": "Ondata di rivoluzioni liberali e nazionali."
+    },
+    {
+      "id": 308,
+      "anno": 1861,
+      "titolo": "Proclamazione del Regno d'Italia",
+      "luogo": "Torino",
+      "civilta": "Italia",
+      "categoria": "politica",
+      "descrizione": "Nascita del Regno d'Italia."
+    },
+    {
+      "id": 309,
+      "anno": 1865,
+      "titolo": "Fine della Guerra Civile Americana",
+      "luogo": "Stati Uniti",
+      "civilta": "Stati Uniti",
+      "categoria": "guerra",
+      "descrizione": "Abolizione della schiavitù negli Stati Uniti."
+    },
+    {
+      "id": 310,
+      "anno": 1870,
+      "titolo": "Presa di Roma",
+      "luogo": "Roma",
+      "civilta": "Italia",
+      "categoria": "politica",
+      "descrizione": "Completamento dell'Unità d'Italia."
+    },
+    {
+      "id": 311,
+      "anno": 1871,
+      "titolo": "Unificazione della Germania",
+      "luogo": "Versailles",
+      "civilta": "Germania",
+      "categoria": "politica",
+      "descrizione": "Proclamazione dell'Impero tedesco."
+    },
+    {
+      "id": 312,
+      "anno": 1885,
+      "titolo": "Conferenza di Berlino",
+      "luogo": "Berlino",
+      "civilta": "Europa",
+      "categoria": "politica",
+      "descrizione": "Divisione coloniale dell'Africa."
+    },
+    {
+      "id": 313,
+      "anno": 1903,
+      "titolo": "Primo volo dei fratelli Wright",
+      "luogo": "Stati Uniti",
+      "civilta": "Stati Uniti",
+      "categoria": "tecnologia",
+      "descrizione": "Primo volo controllato di un aeroplano."
+    },
+    {
+      "id": 314,
+      "anno": 1914,
+      "titolo": "Inizio della Prima Guerra Mondiale",
+      "luogo": "Europa",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "Scoppio del primo conflitto mondiale."
+    },
+    {
+      "id": 315,
+      "anno": 1917,
+      "titolo": "Rivoluzione Russa",
+      "luogo": "Russia",
+      "civilta": "Russia",
+      "categoria": "rivoluzione",
+      "descrizione": "I bolscevichi prendono il potere."
+    },
+    {
+      "id": 316,
+      "anno": 1918,
+      "titolo": "Fine della Prima Guerra Mondiale",
+      "luogo": "Europa",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "Armistizio dell'11 novembre."
+    },
+    {
+      "id": 317,
+      "anno": 1919,
+      "titolo": "Trattato di Versailles",
+      "luogo": "Versailles",
+      "civilta": "Europa",
+      "categoria": "politica",
+      "descrizione": "Conclusione ufficiale della Prima Guerra Mondiale."
+    },
+    {
+      "id": 318,
+      "anno": 1922,
+      "titolo": "Marcia su Roma",
+      "luogo": "Roma",
+      "civilta": "Italia",
+      "categoria": "politica",
+      "descrizione": "Inizio del regime fascista."
+    },
+    {
+      "id": 319,
+      "anno": 1929,
+      "titolo": "Crollo di Wall Street",
+      "luogo": "New York",
+      "civilta": "Stati Uniti",
+      "categoria": "economia",
+      "descrizione": "Inizio della Grande Depressione."
+    },
+    {
+      "id": 320,
+      "anno": 1933,
+      "titolo": "Hitler al potere",
+      "luogo": "Germania",
+      "civilta": "Germania",
+      "categoria": "politica",
+      "descrizione": "Adolf Hitler diventa cancelliere."
+    },
+    {
+      "id": 321,
+      "anno": 1939,
+      "titolo": "Inizio della Seconda Guerra Mondiale",
+      "luogo": "Polonia",
+      "civilta": "Europa",
+      "categoria": "guerra",
+      "descrizione": "La Germania invade la Polonia."
+    },
+    {
+      "id": 322,
+      "anno": 1945,
+      "titolo": "Fine della Seconda Guerra Mondiale",
+      "luogo": "Mondo",
+      "civilta": "Alleati",
+      "categoria": "guerra",
+      "descrizione": "Resa della Germania e del Giappone."
+    },
+    {
+      "id": 323,
+      "anno": 1945,
+      "titolo": "Fondazione delle Nazioni Unite",
+      "luogo": "San Francisco",
+      "civilta": "ONU",
+      "categoria": "politica",
+      "descrizione": "Nasce l'Organizzazione delle Nazioni Unite."
+    },
+    {
+      "id": 324,
+      "anno": 1947,
+      "titolo": "Inizio della Guerra Fredda",
+      "luogo": "Mondo",
+      "civilta": "USA e URSS",
+      "categoria": "politica",
+      "descrizione": "Contrapposizione tra blocco occidentale e blocco sovietico."
+    },
+    {
+      "id": 325,
+      "anno": 1948,
+      "titolo": "Dichiarazione Universale dei Diritti Umani",
+      "luogo": "Parigi",
+      "civilta": "ONU",
+      "categoria": "diritto",
+      "descrizione": "L'ONU approva la Dichiarazione Universale dei Diritti Umani."
+    },
+    {
+      "id": 326,
+      "anno": 1948,
+      "titolo": "Costituzione della Repubblica Italiana",
+      "luogo": "Roma",
+      "civilta": "Italia",
+      "categoria": "diritto",
+      "descrizione": "Entra in vigore la Costituzione italiana."
+    },
+    {
+      "id": 327,
+      "anno": 1957,
+      "titolo": "Trattati di Roma",
+      "luogo": "Roma",
+      "civilta": "Europa",
+      "categoria": "politica",
+      "descrizione": "Nasce la Comunità Economica Europea."
+    },
+    {
+      "id": 328,
+      "anno": 1961,
+      "titolo": "Costruzione del Muro di Berlino",
+      "luogo": "Berlino",
+      "civilta": "Germania",
+      "categoria": "politica",
+      "descrizione": "Simbolo della Guerra Fredda."
+    },
+    {
+      "id": 329,
+      "anno": 1969,
+      "titolo": "Primo uomo sulla Luna",
+      "luogo": "Luna",
+      "civilta": "Stati Uniti",
+      "categoria": "scienza",
+      "descrizione": "Missione Apollo 11."
+    },
+    {
+      "id": 330,
+      "anno": 1989,
+      "titolo": "Caduta del Muro di Berlino",
+      "luogo": "Berlino",
+      "civilta": "Germania",
+      "categoria": "politica",
+      "descrizione": "Fine simbolica della Guerra Fredda."
+    },
+    {
+      "id": 331,
+      "anno": 1991,
+      "titolo": "Dissoluzione dell'Unione Sovietica",
+      "luogo": "Mosca",
+      "civilta": "URSS",
+      "categoria": "politica",
+      "descrizione": "Fine dell'Unione Sovietica."
+    },
+    {
+      "id": 332,
+      "anno": 1992,
+      "titolo": "Trattato di Maastricht",
+      "luogo": "Maastricht",
+      "civilta": "Unione Europea",
+      "categoria": "politica",
+      "descrizione": "Nasce ufficialmente l'Unione Europea."
+    },
+    {
+      "id": 333,
+      "anno": 2001,
+      "titolo": "Attentati dell'11 settembre",
+      "luogo": "New York",
+      "civilta": "Stati Uniti",
+      "categoria": "terrorismo",
+      "descrizione": "Attacchi terroristici contro gli Stati Uniti."
+    },
+    {
+      "id": 334,
+      "anno": 2002,
+      "titolo": "Introduzione dell'euro",
+      "luogo": "Europa",
+      "civilta": "Unione Europea",
+      "categoria": "economia",
+      "descrizione": "Entrano in circolazione le banconote e le monete in euro."
+    },
+    {
+      "id": 335,
+      "anno": 2008,
+      "titolo": "Crisi finanziaria globale",
+      "luogo": "Mondo",
+      "civilta": "Economia mondiale",
+      "categoria": "economia",
+      "descrizione": "Fallimento di Lehman Brothers e crisi finanziaria internazionale."
+    },
+    {
+      "id": 336,
+      "anno": 2020,
+      "titolo": "Pandemia di COVID-19",
+      "luogo": "Mondo",
+      "civilta": "Mondo",
+      "categoria": "epidemia",
+      "descrizione": "La pandemia di COVID-19 provoca una crisi sanitaria ed economica globale."
+    },
+    {
+      "id": 337,
+      "anno": 2022,
+      "titolo": "Invasione russa dell'Ucraina",
+      "luogo": "Ucraina",
+      "civilta": "Russia e Ucraina",
+      "categoria": "guerra",
+      "descrizione": "La Russia invade l'Ucraina, dando inizio a un conflitto su larga scala in Europa."
+    }
+  
+]
