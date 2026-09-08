@@ -1,0 +1,7 @@
+com\maboglia\storia\controllers\EventMVC.class
+com\maboglia\storia\controllers\EventREST.class
+com\maboglia\storia\repos\EventRepo.class
+com\maboglia\storia\StoriaApplication.class
+com\maboglia\storia\entities\Event.class
+com\maboglia\storia\services\EventService.class
+com\maboglia\storia\services\EventServiceImpl.class
