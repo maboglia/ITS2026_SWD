@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RestaurantDemo",
+            "request": "launch",
+            "mainClass": "RestaurantDemo",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "TestPredicate",
+            "request": "launch",
+            "mainClass": "TestPredicate",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Biblioteca",
             "request": "launch",
             "mainClass": "Biblioteca",
