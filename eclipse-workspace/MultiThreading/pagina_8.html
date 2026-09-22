@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mauro Bogliaccino" />
+    <title>Mauro Bogliaccino</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-dark.min.css" integrity="sha512-y6rcKLYkttB9ZUBaz0IsncWFo1VoqISrcMY6J1i6Nb9WB9jRrpll8zjt5e1/naZHyXFoR/1VlH72+2VJ1Uzh7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <style>
+body {
+  background-color: #f5f5f5; /* Grigio chiaro per uno sfondo leggibile */
+  color: #333; /* Testo scuro per il contrasto */
+}
+
+body > nav > a > span {
+  color: #007bff; /* Blu per evidenziare i link nel menu */
+}
+
+div > .list-group li {
+  background-color: #ffffff; /* Sfondo bianco per una lista più chiara */
+  color: #333; /* Testo scuro per migliorare la leggibilità */
+}
+
+div > .list-group li a {
+  color: #007bff; /* Link ben visibili */
+}
+
+.bg-medium {
+  background-color: #e9ecef; /* Grigio molto chiaro per uno sfondo leggero */
+}
+
+h5 .text-primary {
+  color: #0056b3; /* Blu scuro per maggiore leggibilità */
+}
+
+.card {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff; /* Sfondo bianco per le card */
+  border: 1px solid #ddd; /* Bordo sottile per definire le card */
+  min-height: 300px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Leggero effetto di profondità */
+}
+
+h1, li, div {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 6px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+pre {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.9rem;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+}
+
+
+    </style>
+</head>
+<body>
+
+<!-- menu -->
+
+<!--  navbar navbar-dark bg-primary -->
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Mauro Bogliaccino</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link  " href="https://www.bogliaccino.it/public/java">Java</a></li>
+        <li class="nav-item"><a class="nav-link  " href="https://www.bogliaccino.it/public/php">Php</a></li>
+        <li class="nav-item"><a class="nav-link  " href="https://www.bogliaccino.it/public/SQL">SQL</a></li> 
+        <li class="nav-item"><a class="nav-link  " href="https://www.bogliaccino.it/public/python">Python</a></li> 
+        <li class="nav-item"><a class="nav-link  " href="https://www.bogliaccino.it/public/javascript">JavaScript</a></li> 
+        <li class="nav-item"><a class="nav-link  " href="https://www.bogliaccino.it/public/rest">Rest</a></li>
+        <li class="nav-item"><a class="nav-link  " href="https://www.bogliaccino.it/public/fondamenti">Fondamenti</a></li>
+        <li class="nav-item"><a target="_blank" class="nav-link " href="https://github.com/maboglia">GitHub</a></li>
+      </ul>
+
+</nav>
+
+	<div class="container"><style>
+  .mb-landing {
+    --mb-blue: #0d6efd;
+    --mb-dark: #0b1220;
+    --mb-muted: #64748b;
+    --mb-soft: #f8fafc;
+  }
+
+  .mb-hero {
+    background:
+      radial-gradient(circle at 85% 15%, rgba(13,110,253,.16), transparent 32%),
+      linear-gradient(135deg, #f8fbff 0%, #ffffff 55%, #f4f8ff 100%);
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  .mb-eyebrow {
+    color: var(--mb-blue);
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: .82rem;
+  }
+
+  .mb-hero h1 {
+    color: var(--mb-dark);
+    letter-spacing: -.04em;
+  }
+
+  .mb-hero .lead {
+    color: #475569;
+    max-width: 760px;
+  }
+
+  .mb-card {
+    height: 100%;
+    border: 1px solid #e8edf4;
+    border-radius: 1.25rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1.5rem rgba(15, 23, 42, .06);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+
+  .mb-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, .10);
+  }
+
+  .mb-icon {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .9rem;
+    background: #eaf2ff;
+    color: var(--mb-blue);
+    font-weight: 800;
+  }
+
+  .mb-section-title {
+    color: var(--mb-dark);
+    letter-spacing: -.025em;
+  }
+
+  .mb-book {
+    border: 0;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: var(--mb-soft);
+  }
+
+  .mb-book img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .mb-pill {
+    display: inline-block;
+    margin: .25rem .2rem;
+    padding: .45rem .75rem;
+    border-radius: 999px;
+    background: #f1f5f9;
+    color: #334155;
+    font-size: .9rem;
+  }
+
+  .mb-cta {
+    background: var(--mb-dark);
+    color: #fff;
+    border-radius: 1.75rem;
+  }
+
+  .mb-cta p { color: #cbd5e1; }
+
+  .mb-book img {width: 200px; border: 1px solid #ccc;}
+  
+  .hero-phrase {
+      opacity: 0;
+      transform: translateY(8px);
+      transition:
+          opacity 0.5s ease,
+          transform 0.5s ease;
+      min-height: 1.5em;
+  }
+
+  .hero-phrase.show {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+</style>
+
+<div class="mb-landing">
+  <!-- HERO -->
+  <section class="mb-hero px-4 py-5">
+    <div class="container py-4 py-lg-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-8">
+          <div class="mb-eyebrow mb-3">Software · Formazione · Condivisione</div>
+          <h1 class="display-3 fw-bold mb-4">
+            Programmare. Insegnare. Condividere.
+          </h1>
+          <h3 id="hero-phrase" class="hero-phrase">
+              Esperienza nel software.
+          </h3>
+          <p class="lead fs-4 mb-4">
+            Sono <strong>Mauro Bogliaccino</strong>, Senior Software Engineer, docente e trainer IT.
+            Sviluppo software, insegno programmazione e condivido risorse pratiche per aiutare
+            persone e team a diventare realmente operativi.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="/public/home/portfolio" class="btn btn-primary btn-lg px-4">Scopri il mio profilo</a>
+            <a href="https://github.com/maboglia" target="_blank" rel="noopener" class="btn btn-outline-dark btn-lg px-4">Esplora GitHub</a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="img/mauro2.png" alt="Mauro Bogliaccino" class="img-fluid" style="max-width:180px;">
+          <p class="mt-3 mb-0 text-secondary">Torino · Software &amp; Education</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section class="container px-4 py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="mb-card p-4">
+          <div class="mb-icon mb-3">&lt;/&gt;</div>
+          <h2 class="h4">Software Engineering</h2>
+          <p class="text-secondary mb-0">
+            Progettazione e sviluppo back-end, applicazioni web, database e sistemi gestionali,
+            con particolare esperienza su Java e PHP.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="mb-card p-4">
+          <div class="mb-icon mb-3">01</div>
+          <h2 class="h4">Formazione IT</h2>
+          <p class="text-secondary mb-0">
+            Corsi di programmazione e sviluppo software con un approccio pratico, progressivo
+            e orientato a rendere studenti e junior immediatamente operativi.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="mb-card p-4">
+          <div class="mb-icon mb-3">∞</div>
+          <h2 class="h4">Open Knowledge</h2>
+          <p class="text-secondary mb-0">
+            Dispense, esercitazioni, repository e tutorial condivisi online per continuare ad
+            apprendere anche fuori dall'aula.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="container px-4 py-5">
+    <div class="row justify-content-center">
+      <div class="col-xl-9">
+        <div class="p-4 p-lg-5">
+          <div class="mb-eyebrow mb-2">Il mio approccio</div>
+          <h2 class="display-6 fw-bold mb-4 mb-section-title">Il codice si impara facendolo.</h2>
+          <p class="fs-5 text-secondary">
+            Da oltre vent'anni lavoro nel mondo dello sviluppo software e della formazione.
+            La mia idea di didattica nasce direttamente dall'esperienza sul campo: partire dai
+            fondamenti, capire il perché delle scelte progettuali e arrivare rapidamente alla
+            costruzione di software concreto.
+          </p>
+          <p class="fs-5 text-secondary mb-0">
+            Java, Spring, PHP, JavaScript, Python, SQL, API REST, OOP, Design Pattern, testing
+            e sviluppo web sono alcuni degli ambiti nei quali concentro attività professionale
+            e formazione.
+          </p>
+          <div class="mt-4">
+            <span class="mb-pill">Java</span>
+            <span class="mb-pill">Spring Boot</span>
+            <span class="mb-pill">PHP</span>
+            <span class="mb-pill">JavaScript</span>
+            <span class="mb-pill">Python</span>
+            <span class="mb-pill">SQL</span>
+            <span class="mb-pill">REST</span>
+            <span class="mb-pill">OOP</span>
+            <span class="mb-pill">Design Pattern</span>
+            <span class="mb-pill">Testing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section class="bg-light py-5">
+    <div class="container px-4 py-4">
+      <div class="row align-items-end mb-4">
+        <div class="col-lg-8">
+          <div class="mb-eyebrow mb-2">Impara · Sperimenta · Costruisci</div>
+          <h2 class="display-6 fw-bold mb-section-title">Risorse per chi vuole programmare davvero.</h2>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="https://github.com/maboglia" target="_blank" rel="noopener" class="btn btn-outline-primary">Tutti i repository →</a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="mb-card p-4">
+            <h3 class="h4">Corsi e dispense</h3>
+            <p class="text-secondary">
+              Materiali didattici dedicati a fondamenti di programmazione, PHP, Python,
+              JavaScript, database e architetture REST.
+            </p>
+            <a href="https://www.bogliaccino.it/public/fondamenti" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Basi del coding</a>
+            <a href="https://www.bogliaccino.it/public/python" target="_blank" rel="noopener" class="btn btn-sm btn-outline-secondary">Corso Python</a>
+            <a href="https://www.bogliaccino.it/public/php" target="_blank" rel="noopener" class="btn btn-sm btn-outline-secondary">PHP</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-card p-4">
+            <h3 class="h4">Codice ed esercitazioni</h3>
+            <p class="text-secondary">
+              Repository pubblici con esempi, progetti didattici ed esercitazioni pensati per
+              trasformare la teoria in pratica.
+            </p>
+            <a href="https://github.com/maboglia/CorsoJava" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Corso Java</a>
+            <a href="https://github.com/maboglia" target="_blank" rel="noopener" class="btn btn-sm btn-outline-secondary">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKS -->
+  <section class="container px-4 py-5">
+    <div class="text-center mb-5">
+      <div class="mb-eyebrow mb-2">Libri</div>
+      <h2 class="display-6 fw-bold mb-section-title">La formazione continua anche sulla pagina.</h2>
+      <p class="lead text-secondary mx-auto" style="max-width:760px;">
+        Manuali digitali nati dall'esperienza in aula e pensati per accompagnare chi programma
+        dalle basi alla costruzione di applicazioni reali.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-5">
+        <div class="mb-book p-4 h-100 text-center">
+          <img src="https://books.google.it/books/publisher/content?id=dr7tEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl" alt="Copertina I love Java" class="img-fluid mb-4">
+          <h3 class="h4">I love Java</h3>
+          <p class="text-secondary">Dalle basi a Spring Boot</p>
+          <a href="https://play.google.com/store/books/details/Mauro_Bogliaccino_I_love_Java?id=dr7tEQAAQBAJ" target="_blank" rel="noopener" class="btn btn-primary">Scopri il libro</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="mb-book p-4 h-100 text-center">
+          <img src="https://play.google.com/books/publisher/content/images/frontcover/qXAMEgAAQBAJ?fife=w400-h600" alt="Copertina Python maledetto" class="img-fluid mb-4">
+          <h3 class="h4">Python maledetto</h3>
+          <p class="text-secondary">Un percorso pratico per costruire metodo e logica di programmazione</p>
+          <a href="https://play.google.com/store/books/details?id=qXAMEgAAQBAJ" target="_blank" rel="noopener" class="btn btn-primary">Scopri il libro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container px-4 pb-5">
+    <div class="mb-cta p-4 p-lg-5 text-center">
+      <div class="mb-eyebrow text-info mb-2">Parliamone</div>
+      <h2 class="display-6 fw-bold">Cerchi competenze, codice o formazione?</h2>
+      <p class="lead mx-auto" style="max-width:720px;">
+        Esplora il profilo professionale, guarda i progetti su GitHub o scopri i materiali
+        didattici. Il punto di partenza è sempre lo stesso: imparare, costruire, condividere.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+        <a href="portfolio.php" class="btn btn-primary btn-lg px-4">Profilo professionale</a>
+        <a href="https://www.linkedin.com/in/maurobogliaccino/" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg px-4">LinkedIn</a>
+        <a href="https://github.com/maboglia" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg px-4">GitHub</a>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const phrases = [
+    'Costruire software. Progettare soluzioni. Scrivere codice.',
+    'Trasformare esperienza in metodo.',
+    'Codice, corsi, libri e conoscenza open.'
+    ];
+
+    const element = document.getElementById('hero-phrase');
+
+    if (!element) {
+        return;
+    }
+
+    let index = 0;
+
+    const changePhrase = () => {
+
+        // Fade out
+        element.classList.remove('show');
+
+        setTimeout(() => {
+
+            // Prossima frase
+            index = (index + 1) % phrases.length;
+            element.textContent = phrases[index];
+
+            // Fade in
+            element.classList.add('show');
+
+        }, 500);
+    };
+
+    // Prima visualizzazione
+    element.classList.add('show');
+
+    // Cambia frase ogni 4 secondi
+    setInterval(changePhrase, 4000);
+
+});
+</script>
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+
+
+      <li class="nav-item"><a  class="nav-link px-2 text-muted" title="Pagina linkedin" href="https://it.linkedin.com/pub/mauro-bogliaccino/8/497/167"><img src='https://www.bogliaccino.it/public/img/linkedin.png' alt='linkedin'></a></li>
+      <li class="nav-item"><a  class="nav-link px-2 text-muted" title="Repository github" href="http://github.com/maboglia"><img src='https://www.bogliaccino.it/public/img/github.png' alt='github'></a></li>
+      <li class="nav-item"><a  class="nav-link px-2 text-muted" title="Invia email su gmail" href="mailto:mauro.bogliaccino@gmail.com"><img src='https://www.bogliaccino.it/public/img/gmail.png' alt='gmail'></a></li>
+      <li class="nav-item"><a  class="nav-link px-2 text-muted" title="Pagina twitter" href="https://twitter.com/maboglia"><img src='https://www.bogliaccino.it/public/img/twitter.png' alt='twitter'></a></li>
+      <li class="nav-item"><a  class="nav-link px-2 text-muted" title="Pagina facebook" href="https://www.facebook.com/mauro.bogliaccino"><img src='https://www.bogliaccino.it/public/img/facebook.png' alt='facebook'></a></li>
+
+
+    </ul>
+    <p class="text-center text-muted"><img src='https://www.bogliaccino.it/public/img/creative_commons.png' alt=''> 2023 mauro bogliaccino</p>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-python.min.js" integrity="sha512-3qtI9+9JXi658yli19POddU1RouYtkTEhTHo6X5ilOvMiDfNvo6GIS6k2Ukrsx8MyaKSXeVrnIWeyH8G5EOyIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-markdown.min.js" integrity="sha512-4lQBgtc3AKPFSyFxc8Uaq6rz3VHwrSOdQxXtkJN9cS81ErTSoNSBxLDzWNYwwYryuvQpseKWiOmZdArMroqnLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-java.min.js" integrity="sha512-BEknrL2CnuVpqnSTwO4a9y9uW5bQ/nabkJeahZ5seRXvmzAMq59Ja9OxZe3lVGrnKEcVlamL4nUBl03wzPM/nA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-php.min.js" integrity="sha512-6UGCfZS8v5U+CkSBhDy+0cA3hHrcEIlIy2++BAjetYt+pnKGWGzcn+Pynk41SIiyV2Oj0IBOLqWCKS3Oa+v/Aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
