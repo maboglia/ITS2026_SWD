@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\maikol.mombelli\Desktop\Bogliaccino\ITS2026_SWD\laboratorioMombelli\Java\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2568345392.index
+2268503177.index
+663330023.index
+1034931519.index
+2628798375.index
+3674186312.index

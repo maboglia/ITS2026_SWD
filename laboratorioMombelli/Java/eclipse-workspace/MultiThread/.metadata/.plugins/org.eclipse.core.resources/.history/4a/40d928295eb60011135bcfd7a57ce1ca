@@ -1,0 +1,13 @@
+package lez02;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Runnable eclipse = () -> System.out.println("Sono un thread");
+		Thread t1 = new Thread(eclipse);
+		t1.start();
+
+	}
+
+}
